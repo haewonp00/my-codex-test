@@ -1,0 +1,46 @@
+{
+  "notebooks_schema_and_syntax": "passed",
+  "training_executed": false,
+  "missing_starter_preflight": "passed; stopped before any output dataset creation",
+  "model_load": "passed",
+  "class_names": {
+    "0": "plastic",
+    "1": "paper",
+    "2": "metal"
+  },
+  "cpu_inference": {
+    "passed": true,
+    "source": "/workspace/recycling_assets/supplement/recycling_supplement_v1/images/train/supp_v1_000.jpg",
+    "training_seen_image": true,
+    "not_an_independent_accuracy_evaluation": true,
+    "detections": [
+      {
+        "class": "metal",
+        "confidence": 0.9384309649467468
+      }
+    ]
+  },
+  "historical_results_csv_epochs": 20,
+  "historical_last_epoch": {
+    "epoch": "20",
+    "time": "289.127",
+    "train/box_loss": "0.5775",
+    "train/cls_loss": "0.89624",
+    "train/dfl_loss": "1.20182",
+    "metrics/precision(B)": "0.6428",
+    "metrics/recall(B)": "0.63688",
+    "metrics/mAP50(B)": "0.64348",
+    "metrics/mAP50-95(B)": "0.52222",
+    "val/box_loss": "0.74263",
+    "val/cls_loss": "1.25001",
+    "val/dfl_loss": "1.21363",
+    "lr/pg0": "8.50255e-05",
+    "lr/pg1": "8.50255e-05",
+    "lr/pg2": "8.50255e-05"
+  },
+  "new_quantitative_evaluation": "not run: missing starter validation/test images and labels",
+  "independent_photo_test": "not run: no independent test photos supplied",
+  "training_guard": "passed; RuntimeError before imports/model initialization",
+  "evaluation_notebook_training_calls": 0,
+  "original_notebook_sha256": "2dc903b8194277d60744b05fcbe251025edc94485a6af78efb0c25d003266b00"
+}

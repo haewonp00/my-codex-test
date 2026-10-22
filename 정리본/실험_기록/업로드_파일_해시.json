@@ -1,0 +1,20 @@
+[
+  {
+    "uploaded_name": "recycling_label_patch_v1 (1).json",
+    "path": "/workspace/attachments/3cbec1e0-ef1f-43df-b0b9-baa1765f7adf/recycling_label_patch_v1 (1).json",
+    "sha256": "d4f8be7325c6657e60c71e60a9b83024fa03d8ad90d86be9281bf761fdc61e39",
+    "bytes": 10374
+  },
+  {
+    "uploaded_name": "recycling_supplement_v1.zip",
+    "path": "/workspace/attachments/5e5419c3-5a38-487b-b31f-3dddc425eb49/recycling_supplement_v1.zip",
+    "sha256": "528fa4abb9fcb57dccb63e25adcdccd65aa531ebd008cf452f13282fd138f7c7",
+    "bytes": 33058453
+  },
+  {
+    "uploaded_name": "recycling_label_fix_run_v1.zip",
+    "path": "/workspace/attachments/a4aaef15-41d5-409b-8eb1-9fe5e0947f27/recycling_label_fix_run_v1.zip",
+    "sha256": "3a890699d1db74905b85d4d676bb073e1e133ceae7e332ef09a0f0d8e80cd3bb",
+    "bytes": 14877062
+  }
+]

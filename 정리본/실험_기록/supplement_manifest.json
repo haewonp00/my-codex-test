@@ -1,0 +1,126 @@
+[
+  {
+    "file": "supp_v1_000.jpg",
+    "original_filename": "KakaoTalk_20261020_011740717.jpg",
+    "status": "train",
+    "label": "metal",
+    "bbox_xyxy_normalized": [
+      0.18,
+      0.13,
+      0.68,
+      0.605
+    ]
+  },
+  {
+    "file": "supp_v1_001.jpg",
+    "original_filename": "KakaoTalk_20261020_011740717_01.jpg",
+    "status": "train",
+    "label": "metal",
+    "bbox_xyxy_normalized": [
+      0.26,
+      0.1,
+      0.68,
+      0.505
+    ]
+  },
+  {
+    "file": "supp_v1_002.jpg",
+    "original_filename": "KakaoTalk_20261020_011740717_02.jpg",
+    "status": "train",
+    "label": "plastic",
+    "bbox_xyxy_normalized": [
+      0.3,
+      0.355,
+      0.71,
+      0.75
+    ]
+  },
+  {
+    "file": "supp_v1_003.jpg",
+    "original_filename": "KakaoTalk_20261020_011740717_03.jpg",
+    "status": "train",
+    "label": "plastic",
+    "bbox_xyxy_normalized": [
+      0.325,
+      0.18,
+      0.62,
+      0.9
+    ]
+  },
+  {
+    "file": "supp_v1_004.jpg",
+    "original_filename": "KakaoTalk_20261020_011740717_04.jpg",
+    "status": "train",
+    "label": "paper",
+    "bbox_xyxy_normalized": [
+      0.06,
+      0.09,
+      0.89,
+      0.94
+    ]
+  },
+  {
+    "file": "supp_v1_005.jpg",
+    "original_filename": "KakaoTalk_20261020_011740717_05.jpg",
+    "status": "train",
+    "label": "plastic",
+    "bbox_xyxy_normalized": [
+      0.31,
+      0.18,
+      0.71,
+      0.85
+    ]
+  },
+  {
+    "file": "supp_v1_006.jpg",
+    "original_filename": "KakaoTalk_20261020_011740717_06.jpg",
+    "status": "train",
+    "label": "paper",
+    "bbox_xyxy_normalized": [
+      0.3,
+      0.235,
+      0.66,
+      0.74
+    ]
+  },
+  {
+    "file": "supp_v1_007.jpg",
+    "original_filename": "KakaoTalk_20261020_011740717_07.jpg",
+    "status": "excluded",
+    "label": "EXCLUDED: drink carton",
+    "bbox_xyxy_normalized": null
+  },
+  {
+    "file": "supp_v1_008.jpg",
+    "original_filename": "KakaoTalk_20261020_011740717_08.jpg",
+    "status": "train",
+    "label": "paper",
+    "bbox_xyxy_normalized": [
+      0.26,
+      0.04,
+      0.74,
+      0.94
+    ]
+  },
+  {
+    "file": "supp_v1_009.jpg",
+    "original_filename": "KakaoTalk_20261020_011740717_09.jpg",
+    "status": "train",
+    "label": "background",
+    "bbox_xyxy_normalized": null
+  },
+  {
+    "file": "supp_v1_010.jpg",
+    "original_filename": "KakaoTalk_20261020_011740717_10.jpg",
+    "status": "train",
+    "label": "background",
+    "bbox_xyxy_normalized": null
+  },
+  {
+    "file": "supp_v1_011.jpg",
+    "original_filename": "KakaoTalk_20261020_011740717_11.jpg",
+    "status": "train",
+    "label": "background",
+    "bbox_xyxy_normalized": null
+  }
+]
