@@ -11,6 +11,14 @@
 
 ZIP에는 가중치가 없습니다. 새 모델은 본인이 Colab에서 만든 실제 파일을 별도로 지정해야 합니다.
 
+### 새 모델의 실제 다운로드 위치
+
+Google Drive 웹사이트에서 **내 드라이브 → recycling_experiments → 해당 학습 실행의 날짜시간_식별자 폴더 → background35_v1 → weights → best.pt**를 찾습니다. best.pt를 오른쪽 클릭 → 다운로드합니다.
+
+Colab 왼쪽 폴더 모양 ‘파일’에서는 **drive → MyDrive → recycling_experiments → 해당 학습 폴더 → background35_v1 → weights → best.pt**입니다. 오른쪽 ⋮ → 다운로드를 누릅니다. 파일 창에 drive가 없으면 학습 때 쓴 Google 계정으로 Drive를 연결해야 합니다.
+
+새 모델은 사용자 Drive에 있으며 GitHub에는 업로드되지 않았습니다. 이 ZIP만 받아서는 새 모델 파일이 생기지 않습니다. 더 자세한 찾기 설명은 ZIP의 `처음읽기_다운로드와모델위치.md`에 있습니다.
+
 ## 2. S25에서 USB 디버깅 켜기
 
 1. 설정 → 휴대전화 정보 → 소프트웨어 정보 → **빌드번호를 7번** 누릅니다.
