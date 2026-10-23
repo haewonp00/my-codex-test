@@ -1,0 +1,41 @@
+{
+  "server_contract_tests": {
+    "passed": 8,
+    "failed": 0,
+    "uses_fake_model": true
+  },
+  "actual_model_api_smoke": {
+    "actual_checkpoint_api_smoke": "passed",
+    "weights_sha256": "2f65acc39ad05d21ef3531e64a727adfd5e1f003215c49be5e1f2640c336bc47",
+    "checkpoint": "existing label_fix_v1, not a newly supplied checkpoint",
+    "source_photo": "/workspace/background_experiment_v1/development_eval/images/background_09.jpg",
+    "detected_count": 1,
+    "annotation_decodable": true,
+    "numbering_and_xyxy_contract": "passed",
+    "original_checkpoint_unchanged": true,
+    "training_executed": false
+  },
+  "dart_syntax": {
+    "parser": "tree-sitter-dart (not Dart analyzer)",
+    "files": 13,
+    "passed": true
+  },
+  "flutter_analyze": "not run: SDK unavailable; official SDK download blocked by network",
+  "flutter_test": "written but not run: SDK unavailable",
+  "android_build_and_Galaxy_S25": "not run: phone/platform project unavailable",
+  "guide_items": 16,
+  "official_guides_registered": 0,
+  "training_executed": false,
+  "inference_settings": {
+    "confidence": 0.25,
+    "iou": 0.7,
+    "imgsz": 640,
+    "device": "cpu"
+  },
+  "provided_source_files": [
+    "recycling_app/pubspec.yaml",
+    "recycling_server/server.py",
+    "recycling_app/test/widget_test.dart",
+    "recycling_app/lib/main.dart"
+  ]
+}

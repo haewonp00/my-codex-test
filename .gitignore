@@ -5,3 +5,10 @@ __pycache__/
 venv/
 *.pt
 *.cache
+
+# Flutter and Python local build/test outputs
+.dart_tool/
+build/
+.flutter-plugins-dependencies
+.pytest_cache/
+coverage/
