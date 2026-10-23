@@ -4,5 +4,7 @@
   "actual_Windows_execution": "not run: Windows/PowerShell unavailable",
   "actual_S25_USB_connection": "not run: phone unavailable",
   "package_contains_model": false,
-  "backup_before_overwrite": true
+  "backup_before_overwrite": true,
+  "package_root_fix": "Parameter default is empty; resolve script location in body, or use explicit -PackageRoot",
+  "powershell_runtime_test": "not run: Windows PowerShell unavailable"
 }

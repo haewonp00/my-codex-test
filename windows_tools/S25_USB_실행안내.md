@@ -52,7 +52,7 @@ Test-Path $newModel
 둘 다 `True`여야 합니다. False면 파일명 또는 압축을 푼 위치를 수정하세요. 그다음:
 
 ```powershell
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$package\windows_tools\Update-AppFiles.ps1" -ModelPath $newModel
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$package\windows_tools\Update-AppFiles.ps1" -ModelPath $newModel -PackageRoot $package
 ```
 
 이 실행 정책 옵션은 **해당 스크립트 프로세스에만 적용**하며 PC의 정책을 영구 변경하지 않습니다.
@@ -65,7 +65,7 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$package\windows_tools\
 다른 위치라면 명시합니다.
 
 ```powershell
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$package\windows_tools\Update-AppFiles.ps1" -ModelPath $newModel -AppRoot 'C:\Users\haewo\recycling_app' -ServerRoot 'C:\Users\haewo\recycling_server'
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$package\windows_tools\Update-AppFiles.ps1" -ModelPath $newModel -PackageRoot $package -AppRoot 'C:\Users\haewo\recycling_app' -ServerRoot 'C:\Users\haewo\recycling_server'
 ```
 
 스크립트가 하는 일:
@@ -274,3 +274,18 @@ android:usesCleartextTraffic="true"
 ## 검증 범위
 
 앱/서버 소스의 테스트·구문 검사 결과는 `앱_변경기록/검증결과.json`에 있습니다. 서버 계약 테스트 8개 및 기존 실제 모델 API 연결 검사는 통과했습니다. Flutter analyze/test, Windows PowerShell 스크립트 실행, S25 실기기 실행은 이 Linux 클라우드에서 수행하지 못했습니다. 아래 스크립트는 본인의 Windows에서 실행해야 하며, 실행 전 ModelPath와 프로젝트 경로를 확인하세요. 안내 문서와 파일 교체만으로 새 모델의 성능이 검증되는 것은 아닙니다.
+
+
+## Update-AppFiles.ps1의 Split-Path 빈 문자열 오류
+
+이전 스크립트에서 PackageRoot의 기본값을 계산할 때 PSScriptRoot가 비어 실패하는 문제가 있었습니다. 이 오류는 파일 교체를 시작하기 전 단계에서 발생합니다. 최신 ZIP에는 기본 경로 계산을 매개변수 바인딩 이후로 옮긴 수정본이 들어 있습니다.
+
+이미 받은 ZIP으로 진행하려면 PackageRoot를 명시합니다.
+
+```powershell
+$package = 'C:\Users\haewo\Downloads\recycling_s25_update_v1'
+$newModel = 'C:\Users\haewo\Downloads\best_background35.pt'
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$package\windows_tools\Update-AppFiles.ps1" -ModelPath $newModel -PackageRoot $package -AppRoot 'C:\Users\haewo\recycling_app' -ServerRoot 'C:\Users\haewo\recycling_server'
+```
+
+실제 모델 이름·압축 해제 폴더가 다르면 해당 경로를 바꿉니다. PowerShell 스크립트의 실제 Windows 실행은 클라우드에서 검증하지 못했습니다.

@@ -79,7 +79,7 @@ Test-Path $newModel
 둘 다 True여야 합니다. 기존 서버와 flutter run을 종료한 다음:
 
 ```powershell
-powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$package\windows_tools\Update-AppFiles.ps1" -ModelPath $newModel
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$package\windows_tools\Update-AppFiles.ps1" -ModelPath $newModel -PackageRoot $package
 ```
 
 기존 소스와 모델을 백업하고 새 모델을 `C:\Users\haewo\recycling_server\best.pt`에 설치합니다. 나머지 설치·서버 실행·S25 USB 연결은 ZIP의 windows_tools/S25_USB_실행안내.md를 순서대로 따르세요.

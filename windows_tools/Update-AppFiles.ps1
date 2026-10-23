@@ -1,12 +1,25 @@
 ﻿[CmdletBinding()]
 param(
     [Parameter(Mandatory = $true)][string]$ModelPath,
-    [string]$PackageRoot = (Split-Path -Parent $PSScriptRoot),
+    [string]$PackageRoot = '',
     [string]$AppRoot = (Join-Path $env:USERPROFILE 'recycling_app'),
     [string]$ServerRoot = (Join-Path $env:USERPROFILE 'recycling_server')
 )
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
+
+# Resolve automatic script paths only after parameter binding has completed.
+# Some Windows PowerShell invocations expose an empty PSScriptRoot in defaults.
+if ([string]::IsNullOrWhiteSpace($PackageRoot)) {
+    $scriptFilePath = $PSCommandPath
+    if ([string]::IsNullOrWhiteSpace($scriptFilePath)) {
+        $scriptFilePath = $MyInvocation.MyCommand.Path
+    }
+    if ([string]::IsNullOrWhiteSpace($scriptFilePath)) {
+        throw '압축 해제 폴더를 -PackageRoot로 직접 지정하세요.'
+    }
+    $PackageRoot = [IO.Path]::GetDirectoryName([IO.Path]::GetDirectoryName($scriptFilePath))
+}
 
 if (-not (Test-Path -LiteralPath (Join-Path $AppRoot 'pubspec.yaml') -PathType Leaf)) {
     throw "기존 앱 경로를 확인하세요: $AppRoot"
