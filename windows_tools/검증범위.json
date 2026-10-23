@@ -1,0 +1,8 @@
+{
+  "powershell_files": 2,
+  "tree_sitter_powershell_syntax": "passed",
+  "actual_Windows_execution": "not run: Windows/PowerShell unavailable",
+  "actual_S25_USB_connection": "not run: phone unavailable",
+  "package_contains_model": false,
+  "backup_before_overwrite": true
+}
