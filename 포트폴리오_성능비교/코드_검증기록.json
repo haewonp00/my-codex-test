@@ -1,0 +1,8 @@
+{
+  "notebook_and_code_syntax": "passed",
+  "old_checkpoint_as_new_rejected": true,
+  "test_does_not_reuse_old_val_record": true,
+  "old_checkpoint_re_evaluation": "actual Val90 and background16 matches historical metrics within 1e-6; background FP 13/16",
+  "new_checkpoint_evaluated": false,
+  "training_executed": false
+}
