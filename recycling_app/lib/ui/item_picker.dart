@@ -17,12 +17,12 @@ Future<ItemSelection?> showItemPicker(BuildContext context, {
           child: Column(crossAxisAlignment: CrossAxisAlignment.stretch, children: [
             Text(title, style: Theme.of(context).textTheme.titleLarge),
             const SizedBox(height: 12),
-            Expanded(child: ListView(children: [
+            Expanded(child: ListView(key: const ValueKey('item-picker-scroll'), children: [
               const Text('종류를 선택해 주세요.'),
               const SizedBox(height: 8),
               Wrap(spacing: 8, runSpacing: 4, children: [
                 for (final value in ItemCategory.values)
-                  ChoiceChip(label: Text(value.label), selected: category == value,
+                  ChoiceChip(key: ValueKey('category-${value.name}'), label: Text(value.label), selected: category == value,
                     onSelected: (_) => update(() {
                       if (category != value) {
                         category = value;
@@ -42,7 +42,7 @@ Future<ItemSelection?> showItemPicker(BuildContext context, {
               ],
             ])),
             const SizedBox(height: 8),
-            FilledButton(onPressed: category == null || itemId == null ? null : () {
+            FilledButton(key: const ValueKey('picker-confirm'), onPressed: category == null || itemId == null ? null : () {
               Navigator.pop(context, ItemSelection(category: category!, itemId: itemId!));
             }, child: const Text('이 품목으로 확인')),
             TextButton(onPressed: () => Navigator.pop(context), child: const Text('취소')),

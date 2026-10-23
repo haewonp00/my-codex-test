@@ -20,13 +20,17 @@ class _GuidePageState extends State<GuidePage> {
   Future<void> _change() async {
     final selected = await showItemPicker(context, initialSelection: _selection,
       title: '안내 품목 변경');
-    if (!mounted || selected == null) return;
+    if (!mounted || selected == null) {
+return;
+}
     widget.onSelectionChanged?.call(selected);
     setState(() => _selection = selected);
   }
 
   void _message(String text) {
-    if (mounted) ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(text)));
+    if (mounted) {
+ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(text)));
+}
   }
 
   Future<void> _open(Uri uri) async {
@@ -47,17 +51,17 @@ class _GuidePageState extends State<GuidePage> {
     final imageUri = officialWebUri(guide?.officialImageUrl);
     final sourceUri = officialWebUri(guide?.sourceUrl);
     return Scaffold(appBar: AppBar(title: const Text('품목별 배출 안내')),
-      body: SafeArea(child: ListView(padding: const EdgeInsets.all(24), children: [
-        Text(_selection.item.name, style: Theme.of(context).textTheme.headlineSmall),
+      body: SafeArea(child: ListView(key: const ValueKey('guide-scroll'), padding: const EdgeInsets.all(24), children: [
+        Text(_selection.item.name, key: const ValueKey('guide-item-name'), style: Theme.of(context).textTheme.headlineSmall),
         const SizedBox(height: 8),
         Text('확인한 종류: ${_selection.category.label}'),
         const SizedBox(height: 16),
-        OutlinedButton.icon(onPressed: _change, icon: const Icon(Icons.edit_outlined),
+        OutlinedButton.icon(key: const ValueKey('guide-change-item'), onPressed: _change, icon: const Icon(Icons.edit_outlined),
           label: const Text('품목 변경')),
         const SizedBox(height: 16),
         if (guide == null)
           const Card(child: Padding(padding: EdgeInsets.all(24),
-            child: Text('이 품목의 안내는 준비 중입니다')))
+            child: Text('이 품목의 안내는 준비 중입니다', key: ValueKey('guide-pending'))))
         else ...[
           Text('핵심 배출 행동', style: Theme.of(context).textTheme.titleLarge),
           const SizedBox(height: 8),

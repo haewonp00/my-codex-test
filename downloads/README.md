@@ -1,5 +1,14 @@
 # 받을 파일과 정확한 위치
 
+## 이미 설치했고 Flutter 화면 테스트 4개가 실패한 경우
+
+서버·모델을 다시 설치하지 말고 **recycling_flutter_patch_v2.zip**만 받으세요.
+
+- 패치 파일: https://github.com/haewonp00/my-codex-test/blob/main/downloads/recycling_flutter_patch_v2.zip
+- 단계별 적용: [Flutter_패치_v2_적용.md](Flutter_패치_v2_적용.md)
+
+이 패치는 Dart 파일 6개만 백업 후 교체하며, best.pt·서버·pubspec.yaml·Android 설정은 변경하지 않습니다. 수정 후 Flutter 검사는 본인의 Windows에서 실행해야 합니다.
+
 ## 1. 앱·서버·USB 연결 도구 ZIP
 
 GitHub에서 이 폴더의 **recycling_s25_update_v1.zip** 파일을 엽니다.

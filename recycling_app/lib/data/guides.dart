@@ -37,9 +37,13 @@ DisposalGuide? guideFor(String itemId) {
 }
 
 Uri? officialWebUri(String? value) {
-  if (value == null || value.trim().isEmpty) return null;
+  if (value == null || value.trim().isEmpty) {
+return null;
+}
   final uri = Uri.tryParse(value);
   if (uri == null || !uri.hasAuthority || uri.host.isEmpty ||
-      (uri.scheme != 'https' && uri.scheme != 'http')) return null;
+      (uri.scheme != 'https' && uri.scheme != 'http')) {
+return null;
+}
   return uri;
 }

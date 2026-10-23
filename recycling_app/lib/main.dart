@@ -44,7 +44,9 @@ class _PhotoPageState extends State<PhotoPage> {
 
   Future<void> _manualGuide() async {
     final selected = await showItemPicker(context, title: '직접 배출 방법 찾기');
-    if (!mounted || selected == null) return;
+    if (!mounted || selected == null) {
+return;
+}
     await Navigator.push<void>(context, MaterialPageRoute(builder: (_) => GuidePage(selection: selected)));
   }
 
@@ -53,15 +55,21 @@ class _PhotoPageState extends State<PhotoPage> {
     final selected = await showItemPicker(context,
       initialSelection: entry.selection, initialCategory: entry.prediction.category,
       title: changing ? '종류 바꾸기 / 세부 품목 선택' : '종류 확인 / 세부 품목 선택');
-    if (!mounted || selected == null) return;
+    if (!mounted || selected == null) {
+return;
+}
     // 선택 창이 열린 사이 결과가 바뀌면 이전 카드를 변경하지 않습니다.
-    if (!_controller.entries.any((e) => e.prediction.id == id)) return;
+    if (!_controller.entries.any((e) => e.prediction.id == id)) {
+return;
+}
     _controller.confirm(id, selected);
   }
 
   Future<void> _guide(DetectionEntry entry) async {
     final selection = entry.selection;
-    if (selection == null || entry.isExcluded) return;
+    if (selection == null || entry.isExcluded) {
+return;
+}
     final id = entry.prediction.id;
     await Navigator.push<void>(context, MaterialPageRoute(builder: (_) => GuidePage(
       selection: selection, onSelectionChanged: (selected) {
@@ -73,11 +81,15 @@ class _PhotoPageState extends State<PhotoPage> {
 
   Widget _preview() {
     final annotated = _controller.annotatedImage;
-    if (annotated != null) return Image.memory(annotated, fit: BoxFit.contain,
+    if (annotated != null) {
+return Image.memory(annotated, fit: BoxFit.contain,
       errorBuilder: (_, error, stack) => const Center(child: Text('분석 이미지를 표시하지 못했습니다. 다시 분석해 주세요.')));
+}
     final photo = _controller.photo;
-    if (photo != null) return Image.file(photo, fit: BoxFit.contain,
+    if (photo != null) {
+return Image.file(photo, fit: BoxFit.contain,
       errorBuilder: (_, error, stack) => const Center(child: Text('사진을 다시 선택해 주세요.')));
+}
     return const Column(mainAxisAlignment: MainAxisAlignment.center, children: [
       Icon(Icons.add_photo_alternate_outlined, size: 64, color: Colors.grey),
       SizedBox(height: 12), Text('선택한 사진이 여기에 표시됩니다.'),
@@ -130,7 +142,7 @@ class _PhotoPageState extends State<PhotoPage> {
       final c = _controller;
       return Scaffold(backgroundColor: const Color(0xFFF5F8F5),
         appBar: AppBar(title: const Text('분리수거 도우미'), backgroundColor: const Color(0xFFF5F8F5)),
-        body: SafeArea(child: ListView(padding: const EdgeInsets.all(24), children: [
+        body: SafeArea(child: ListView(key: const ValueKey('photo-scroll'), padding: const EdgeInsets.all(24), children: [
           const Icon(Icons.recycling, size: 56, color: Color(0xFF20845A)),
           const SizedBox(height: 16),
           const Text('어떤 물건을 버리시나요?', textAlign: TextAlign.center,
@@ -138,7 +150,7 @@ class _PhotoPageState extends State<PhotoPage> {
           const SizedBox(height: 8),
           const Text('사진을 선택하고 분석하기를 눌러 주세요.', textAlign: TextAlign.center),
           const SizedBox(height: 16),
-          OutlinedButton.icon(onPressed: _manualGuide, icon: const Icon(Icons.menu_book_outlined),
+          OutlinedButton.icon(key: const ValueKey('manual-guide'), onPressed: _manualGuide, icon: const Icon(Icons.menu_book_outlined),
             label: const Text('직접 배출 방법 찾기')),
           const SizedBox(height: 16),
           Container(height: 320, clipBehavior: Clip.antiAlias,
@@ -150,9 +162,9 @@ class _PhotoPageState extends State<PhotoPage> {
               textAlign: TextAlign.center, style: TextStyle(fontSize: 12, color: Colors.black54)),
           ],
           const SizedBox(height: 20),
-          OutlinedButton.icon(onPressed: c.initializing || c.picking ? null : () => c.pick(ImageSource.camera),
+          OutlinedButton.icon(key: const ValueKey('pick-camera'), onPressed: c.initializing || c.picking ? null : () => c.pick(ImageSource.camera),
             icon: const Icon(Icons.camera_alt_outlined), label: const Text('사진 촬영')),
-          OutlinedButton.icon(onPressed: c.initializing || c.picking ? null : () => c.pick(ImageSource.gallery),
+          OutlinedButton.icon(key: const ValueKey('pick-gallery'), onPressed: c.initializing || c.picking ? null : () => c.pick(ImageSource.gallery),
             icon: const Icon(Icons.photo_library_outlined), label: const Text('갤러리에서 선택')),
           const SizedBox(height: 16),
           FilledButton.icon(key: const ValueKey('analyze'),

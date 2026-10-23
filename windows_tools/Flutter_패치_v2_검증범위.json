@@ -1,0 +1,20 @@
+{
+  "source_log": {
+    "dependencies": "success",
+    "analyzer_info": 5,
+    "tests_passed": 13,
+    "widget_tests_failed": 4
+  },
+  "fixes": [
+    "scroll each keyed list before searching lazily built children",
+    "pump frame after item selection before confirm",
+    "wrap if bodies and remove duplicate import"
+  ],
+  "dart_parser": "passed",
+  "powershell_parser": "passed",
+  "flutter_analyze_after_patch": "not run: SDK unavailable",
+  "flutter_test_after_patch": "not run: SDK unavailable",
+  "Windows_script_execution": "not run",
+  "server_changed": false,
+  "model_changed": false
+}
