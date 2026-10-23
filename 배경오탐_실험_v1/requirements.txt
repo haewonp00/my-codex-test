@@ -1,0 +1,6 @@
+ultralytics==8.4.182
+torch==2.9.1
+torchvision==0.24.1
+Pillow
+PyYAML
+nbformat

@@ -1,0 +1,46 @@
+{
+  "weights_sha256": "2f65acc39ad05d21ef3531e64a727adfd5e1f003215c49be5e1f2640c336bc47",
+  "weights": "/workspace/recycling_assets/label_fix_v1/weights/best.pt",
+  "class_mapping": {
+    "0": "plastic",
+    "1": "paper",
+    "2": "metal"
+  },
+  "preprocessing": "EXIF corrected; RGB PIL; Ultralytics letterbox; no manual stretch/normalization",
+  "settings": {
+    "conf": 0.25,
+    "iou": 0.7,
+    "imgsz": 640,
+    "device": "cpu"
+  },
+  "note": "No forced top class, box-size rejection, or invented confidence. Empty results remain empty.",
+  "images": [
+    {
+      "source": "/workspace/recycling_assets/supplement/recycling_supplement_v1/images/train/supp_v1_000.jpg",
+      "source_sha256": "431c4072aab38911a14a508cc4d7c056863ae13689a5fe2e037c63cd80ecbb0f",
+      "original_size": [
+        3000,
+        4000
+      ],
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "detections": [
+        {
+          "class_id": 2,
+          "class_name": "metal",
+          "confidence": 0.9384309649467468,
+          "xyxy_px": [
+            547.9944458007812,
+            506.6869812011719,
+            2017.5396728515625,
+            2405.425537109375
+          ],
+          "image_area_pct": 23.252351518768275
+        }
+      ],
+      "detection_count": 1
+    }
+  ]
+}

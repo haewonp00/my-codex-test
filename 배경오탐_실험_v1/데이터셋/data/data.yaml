@@ -1,0 +1,8 @@
+path: .
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: plastic
+  1: paper
+  2: metal

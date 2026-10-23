@@ -1,0 +1,8 @@
+# Install CPU PyTorch first when CUDA is unavailable:
+# python -m pip install torch==2.9.1 torchvision==0.24.1 --index-url https://download.pytorch.org/whl/cpu
+# GPU environments should use the official matching PyTorch/CUDA builds.
+ultralytics==8.4.182
+PyYAML>=6,<7
+Pillow>=10
+nbformat==5.10.4
+ipykernel==6.30.1

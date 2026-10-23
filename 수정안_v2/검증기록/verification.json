@@ -1,0 +1,29 @@
+{
+  "val_test_byte_identical": true,
+  "actual_changed_image_or_label_files": [
+    "labels/train/0_0000.txt",
+    "labels/train/0_0005.txt"
+  ],
+  "val_test_identical_to_original_zip": true,
+  "overwrite_blocked": true,
+  "train_background_leakage_blocked": true,
+  "actual_dataset_training_dry_run_no_model_initialization": true,
+  "original_best_pt_unchanged": true,
+  "source_archive_sha256": "ecf9d78f1f83d37d9b5a5fed99b886f363fbeb07c05737140158b9cd044313ac",
+  "weights_sha256": "2f65acc39ad05d21ef3531e64a727adfd5e1f003215c49be5e1f2640c336bc47",
+  "training_executed": false,
+  "unit_tests_passed": 9,
+  "remaining_train_candidate_images": 79,
+  "independent_photo_test": "not run: only annotated files supplied as accessible ZIP; original photos needed",
+  "notebook_validation": "format and syntax passed; full notebook not executed",
+  "existing_model_val_metrics": {
+    "metrics/precision(B)": 0.6430135227957195,
+    "metrics/recall(B)": 0.6363297109962769,
+    "metrics/mAP50(B)": 0.6435778335168552,
+    "metrics/mAP50-95(B)": 0.5207507453010145,
+    "fitness": 0.5207507453010145
+  },
+  "newly_trained_model_performance": "not measured: no training executed",
+  "unrun_negative_metrics_are_null": true,
+  "runtime_smoke_test": "predict command passed on existing supplement train image; not independent evaluation"
+}

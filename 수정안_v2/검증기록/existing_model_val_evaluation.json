@@ -1,0 +1,50 @@
+{
+  "weights_sha256": "2f65acc39ad05d21ef3531e64a727adfd5e1f003215c49be5e1f2640c336bc47",
+  "split": "val",
+  "object_metrics": {
+    "metrics/precision(B)": 0.6430135227957195,
+    "metrics/recall(B)": 0.6363297109962769,
+    "metrics/mAP50(B)": 0.6435778335168552,
+    "metrics/mAP50-95(B)": 0.5207507453010145,
+    "fitness": 0.5207507453010145
+  },
+  "per_class": [
+    {
+      "name": "plastic",
+      "precision": 0.5457655834475426,
+      "recall": 0.5660377358490566,
+      "mAP50": 0.5247060884231829,
+      "mAP50-95": 0.4070692798345008
+    },
+    {
+      "name": "paper",
+      "precision": 0.6181096951006433,
+      "recall": 0.5803066067493309,
+      "mAP50": 0.6199279234688948,
+      "mAP50-95": 0.5067563020661034
+    },
+    {
+      "name": "metal",
+      "precision": 0.7651652898389727,
+      "recall": 0.7626447903904431,
+      "mAP50": 0.7860994886584878,
+      "mAP50-95": 0.6484266540024395
+    }
+  ],
+  "settings": {
+    "imgsz": 640,
+    "iou": 0.7,
+    "device": "cpu",
+    "object_val_conf": 0.001,
+    "negative_operating_conf": 0.25
+  },
+  "negative_evaluation": {
+    "images": 0,
+    "false_positive_boxes": null,
+    "images_with_false_positives": null,
+    "false_positive_image_rate": null,
+    "false_positives_per_image": null,
+    "status": "not run; no independent negative photos provided",
+    "details": []
+  }
+}

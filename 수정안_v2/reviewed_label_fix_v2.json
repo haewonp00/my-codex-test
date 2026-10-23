@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "scope": "Two confirmed train whole-object/attached-cap duplicates only; not a complete annotation audit; val/test unchanged",
+  "reviewed_by": "assistant_visual_review",
+  "changes": [
+    {
+      "path": "labels/train/0_0000.txt",
+      "image_filename": "0_0000.jpg",
+      "image_sha256": "8205ad583d51c69ff65b7666e62f6d0837a40e8203e392a5cb2146e21a679f37",
+      "before": "0 0.5985576923076923 0.8377403846153846 0.22596153846153846 0.11538461538461539\n0 0.4326923076923077 0.49399038461538464 0.7596153846153846 0.8028846153846154\n",
+      "after": "0 0.4326923076923077 0.49399038461538464 0.7596153846153846 0.8028846153846154\n",
+      "reason": "Direct visual review: one plastic bottle with attached cap. First box covers the cap, second box covers the whole bottle including the attached cap. Retain the existing whole-object box; do not invent coordinates.",
+      "review_method": "Source image and both original coordinate rows inspected; train only"
+    },
+    {
+      "path": "labels/train/0_0005.txt",
+      "image_filename": "0_0005.jpg",
+      "image_sha256": "94d1e4b57d719fd6840391721145d1c7fd4a454e434765dd6e4e30a71fb5b551",
+      "before": "0 0.5 0.8942307692307693 0.16826923076923078 0.11538461538461539\n0 0.5132211538461539 0.5060096153846154 0.4495192307692308 0.9014423076923077\n",
+      "after": "0 0.5132211538461539 0.5060096153846154 0.4495192307692308 0.9014423076923077\n",
+      "reason": "Direct visual review: one plastic bottle with attached cap. First box covers the cap, second box covers the whole bottle including the attached cap. Retain the existing whole-object box; do not invent coordinates.",
+      "review_method": "Source image and both original coordinate rows inspected; train only"
+    }
+  ]
+}

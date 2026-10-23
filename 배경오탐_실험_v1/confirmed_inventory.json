@@ -1,0 +1,1656 @@
+{
+  "received_images": 55,
+  "confirmation": "55장 모두 탐지 대상 0개. 23번은 엘리베이터 문 쪽, 43번은 바깥쪽 고정 표면. 흰색·투명 부분도 떨어진 종이·비닐 조각이 아님. 사용자 확인.",
+  "images": [
+    {
+      "index": 1,
+      "original_name": "KakaoTalk_20261023_182728310.jpg",
+      "local_path": "/workspace/background_review/batch_01_05/01.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:10:13",
+      "review": {
+        "photo": 1,
+        "scene": "dark wood-grain surface",
+        "status": "객체 0개 사용자 확인",
+        "group": "tentative_wood_A"
+      },
+      "sha256": "068454e85f359ccb463ff5ba7cc8bda464010176ca767e312fca8e62cfe9e706",
+      "pixel_sha256": "7d53be2407729c7754f8e44c76329cbe06c42eddc29bb72efec5331681f80587",
+      "proposed_role": "train_proposal",
+      "proposed_group": "G01",
+      "previous_review": {
+        "photo": 1,
+        "scene": "dark wood-grain surface",
+        "status": "candidate_empty_background",
+        "group": "tentative_wood_A"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 2,
+      "original_name": "KakaoTalk_20261023_182728310_01.jpg",
+      "local_path": "/workspace/background_review/batch_01_05/02.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:10:30",
+      "review": {
+        "photo": 2,
+        "scene": "brown reflective surface, visibly blurred",
+        "status": "객체 0개 사용자 확인; 선명도 보류",
+        "group": "unconfirmed"
+      },
+      "sha256": "db216232d41c82b2b6530edf5975e070f4a75dba98415c9405abff1e76e281da",
+      "pixel_sha256": "954b5491484384469ca907652dc30cbbae3177e3525198d218271ac266589e18",
+      "proposed_role": "quality_hold",
+      "proposed_group": "G02",
+      "previous_review": {
+        "photo": 2,
+        "scene": "brown reflective surface, visibly blurred",
+        "status": "conditional; consider deployment blur conditions",
+        "group": "unconfirmed"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 3,
+      "original_name": "KakaoTalk_20261023_182728310_02.jpg",
+      "local_path": "/workspace/background_review/batch_01_05/03.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:11:06",
+      "review": {
+        "photo": 3,
+        "scene": "speckled stone surface",
+        "status": "객체 0개 사용자 확인",
+        "group": "tentative_stone_A"
+      },
+      "sha256": "6157194f2772392fa0961d1eb2789c76e546e4f76042f539b8f2aaffd490ac06",
+      "pixel_sha256": "dd4731745fcebda644f1425f5e7ba499448a6a8d0cb446611312c014f6faf2af",
+      "proposed_role": "train_proposal",
+      "proposed_group": "G03",
+      "previous_review": {
+        "photo": 3,
+        "scene": "speckled stone surface",
+        "status": "hold; small transparent-looking region near upper right could be reflection/surface mark or plastic",
+        "group": "tentative_stone_A"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 4,
+      "original_name": "KakaoTalk_20261023_182728310_03.jpg",
+      "local_path": "/workspace/background_review/batch_01_05/04.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:11:36",
+      "review": {
+        "photo": 4,
+        "scene": "speckled stone surface with reflections",
+        "status": "객체 0개 사용자 확인",
+        "group": "tentative_stone_A"
+      },
+      "sha256": "17123d8367e320804ebc3bbcb6460901c4c961f22f0763996d5a21da6d173c1c",
+      "pixel_sha256": "85913e65b709d7a235e36655c3c3177cde6ffbcfa537e58681f8efa06e9e8813",
+      "proposed_role": "train_proposal",
+      "proposed_group": "G03",
+      "previous_review": {
+        "photo": 4,
+        "scene": "speckled stone surface with reflections",
+        "status": "hold; inspect same transparent-looking region; likely same scene as photo 3",
+        "group": "tentative_stone_A"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 5,
+      "original_name": "KakaoTalk_20261023_182728310_04.jpg",
+      "local_path": "/workspace/background_review/batch_01_05/05.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:11:48",
+      "review": {
+        "photo": 5,
+        "scene": "dark, strongly blurred surface",
+        "status": "객체 0개 사용자 확인; 선명도 보류",
+        "group": "unconfirmed"
+      },
+      "sha256": "f11948fa422887dca043e93b804251585fb53a7604734834c6bdb3a4d73e95e6",
+      "pixel_sha256": "c21ac96fb04a293a71a838373a765c4971eeba1e19a6ae19a00cac121c9f8fc6",
+      "proposed_role": "quality_hold",
+      "proposed_group": "G04",
+      "previous_review": {
+        "photo": 5,
+        "scene": "dark, strongly blurred surface",
+        "status": "hold_low_visibility; empty-scene status not confidently verifiable",
+        "group": "unconfirmed"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 6,
+      "original_name": "KakaoTalk_20261023_182728310_05.jpg",
+      "local_path": "/workspace/background_review/batch_06_10/06.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:12:40",
+      "review": {
+        "photo": 6,
+        "scene": "dark smooth surface, blurred",
+        "status": "객체 0개 사용자 확인; 선명도 보류",
+        "group": "tentative_dark_surface_with_5_7"
+      },
+      "sha256": "1dd120be41a921b05575e79efeadcec3aed84aa61ae8330e9d9ea6b0a6632e5f",
+      "pixel_sha256": "93377ac5831cb46a045027817bd57ea63d15cc72d4d666d355104ec4bb408db9",
+      "proposed_role": "quality_hold",
+      "proposed_group": "G04",
+      "previous_review": {
+        "photo": 6,
+        "scene": "dark smooth surface, blurred",
+        "status": "hold_low_visibility",
+        "group": "tentative_dark_surface_with_5_7"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 7,
+      "original_name": "KakaoTalk_20261023_182728310_06.jpg",
+      "local_path": "/workspace/background_review/batch_06_10/07.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:12:46",
+      "review": {
+        "photo": 7,
+        "scene": "dark smooth surface, strongly blurred",
+        "status": "객체 0개 사용자 확인; 선명도 보류",
+        "group": "tentative_dark_surface_with_5_6"
+      },
+      "sha256": "ace12ae2f9ec70d0711965738dbd40a34fd82aebb8cc272c936cd001e9c74cdb",
+      "pixel_sha256": "4d52edb5ae58eb09caad70f9ade9ec64ec965604a01da9474a884c3684ee89d1",
+      "proposed_role": "quality_hold",
+      "proposed_group": "G04",
+      "previous_review": {
+        "photo": 7,
+        "scene": "dark smooth surface, strongly blurred",
+        "status": "hold_low_visibility",
+        "group": "tentative_dark_surface_with_5_6"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 8,
+      "original_name": "KakaoTalk_20261023_182728310_07.jpg",
+      "local_path": "/workspace/background_review/batch_06_10/08.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:12:51",
+      "review": {
+        "photo": 8,
+        "scene": "light speckled stone surface",
+        "status": "객체 0개 사용자 확인",
+        "group": "possibly_same_location_as_3_4; unconfirmed"
+      },
+      "sha256": "70ece201519e3be7538ea68f6526d9aa1aa0c90c50e7a4d0aaadb2bec38d71ba",
+      "pixel_sha256": "0c2f22f3286b7bdf1ef2aa2bcf67edf16fedb5ac37fbbce0f116e3ed4ec93f52",
+      "proposed_role": "train_proposal",
+      "proposed_group": "G03",
+      "previous_review": {
+        "photo": 8,
+        "scene": "light speckled stone surface",
+        "status": "candidate_empty_background",
+        "group": "possibly_same_location_as_3_4; unconfirmed"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 9,
+      "original_name": "KakaoTalk_20261023_182728310_08.jpg",
+      "local_path": "/workspace/background_review/batch_06_10/09.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:12:57",
+      "review": {
+        "photo": 9,
+        "scene": "reddish speckled stone surface with small white regions",
+        "status": "객체 0개 사용자 확인",
+        "group": "tentative_reddish_stone"
+      },
+      "sha256": "5a59476128e51d2626412f537518ec7e432011c76f452e2b6329d4dec44676d5",
+      "pixel_sha256": "163e8b03da2c9bcb3037ecef679545329ff0dd3fadcf72c096320dd6ef6feb83",
+      "proposed_role": "development_evaluation_proposal",
+      "proposed_group": "G05",
+      "previous_review": {
+        "photo": 9,
+        "scene": "reddish speckled stone surface with small white regions",
+        "status": "hold; white regions may be surface marks or loose paper/plastic fragments",
+        "group": "tentative_reddish_stone"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 10,
+      "original_name": "KakaoTalk_20261023_182728310_09.jpg",
+      "local_path": "/workspace/background_review/batch_06_10/10.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:13:05",
+      "review": {
+        "photo": 10,
+        "scene": "light smooth surface with fine hair/scratches and small marks",
+        "status": "객체 0개 사용자 확인",
+        "group": "unconfirmed"
+      },
+      "sha256": "ffa93fa0972ccc1758712723f0f457d0994a2a9af4896a9ac574bc0a3b81945d",
+      "pixel_sha256": "361d5447aa1aad544b11122547fff8df535a16133fec0394bb4b3aeda9bbd03e",
+      "proposed_role": "development_evaluation_proposal",
+      "proposed_group": "G06",
+      "previous_review": {
+        "photo": 10,
+        "scene": "light smooth surface with fine hair/scratches and small marks",
+        "status": "candidate_empty_background; no discernible target-class object",
+        "group": "unconfirmed"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 11,
+      "original_name": "KakaoTalk_20261023_182728310_10.jpg",
+      "local_path": "/workspace/background_review/batch_11_15/11.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:13:24",
+      "review": {
+        "photo": 11,
+        "scene": "dark patterned polished stone with light reflections",
+        "status": "객체 0개 사용자 확인",
+        "group": "unconfirmed_dark_stone"
+      },
+      "sha256": "ec766010f4307bb43433ba24d2c5bcc7c06b934999a5b6deec0a05ae2ccce73e",
+      "pixel_sha256": "9365c7255f43ca7a343b7de17aa1cbda60eb76fe2a18cee1c8167fd0a1fff0e2",
+      "proposed_role": "development_evaluation_proposal",
+      "proposed_group": "G07",
+      "previous_review": {
+        "photo": 11,
+        "scene": "dark patterned polished stone with light reflections",
+        "status": "candidate_empty_background; no discernible target object",
+        "group": "unconfirmed_dark_stone"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 12,
+      "original_name": "KakaoTalk_20261023_182728310_11.jpg",
+      "local_path": "/workspace/background_review/batch_11_15/12.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:13:30",
+      "review": {
+        "photo": 12,
+        "scene": "beige stone/tile surface with grout and reflections",
+        "status": "객체 0개 사용자 확인",
+        "group": "tentative_beige_tile_12_13"
+      },
+      "sha256": "583c97bac49684f9a9e1faaf3305f47e4b90b29cf698be53e091ca9a964cef07",
+      "pixel_sha256": "4a752b56ea4f7d34fe2ba8400ce1ce32cd88e95dc5fe466261d2cc5da7604353",
+      "proposed_role": "train_proposal",
+      "proposed_group": "G08",
+      "previous_review": {
+        "photo": 12,
+        "scene": "beige stone/tile surface with grout and reflections",
+        "status": "candidate_empty_background",
+        "group": "tentative_beige_tile_12_13"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 13,
+      "original_name": "KakaoTalk_20261023_182728310_12.jpg",
+      "local_path": "/workspace/background_review/batch_11_15/13.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:13:33",
+      "review": {
+        "photo": 13,
+        "scene": "beige stone/tile surface with grout and reflections",
+        "status": "객체 0개 사용자 확인",
+        "group": "tentative_beige_tile_12_13"
+      },
+      "sha256": "998f62ed0f4932f060307bb179985d08f135519fa44d2ba0612d5a24986984b1",
+      "pixel_sha256": "00637c9b73a0f53a2af301b4c9014eada45d7ab6da24e846ecf8317fa6d5e2ce",
+      "proposed_role": "train_proposal",
+      "proposed_group": "G08",
+      "previous_review": {
+        "photo": 13,
+        "scene": "beige stone/tile surface with grout and reflections",
+        "status": "candidate_empty_background",
+        "group": "tentative_beige_tile_12_13"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 14,
+      "original_name": "KakaoTalk_20261023_182728310_13.jpg",
+      "local_path": "/workspace/background_review/batch_11_15/14.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:14:07",
+      "review": {
+        "photo": 14,
+        "scene": "light near-uniform surface",
+        "status": "객체 0개 사용자 확인",
+        "group": "tentative_uniform_surface_14_15"
+      },
+      "sha256": "2de852dc34ddff92bef543c9f049cfdbadb78e5c5e958117fd6609e6efd53bf8",
+      "pixel_sha256": "0c5d73bfb485e059948c4d7ce466a07ce45554c264212320441a848734408c36",
+      "proposed_role": "train_proposal",
+      "proposed_group": "G09",
+      "previous_review": {
+        "photo": 14,
+        "scene": "light near-uniform surface",
+        "status": "candidate; uniform texture prevents reliable focus assessment from appearance alone",
+        "group": "tentative_uniform_surface_14_15"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 15,
+      "original_name": "KakaoTalk_20261023_182728310_14.jpg",
+      "local_path": "/workspace/background_review/batch_11_15/15.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:14:17",
+      "review": {
+        "photo": 15,
+        "scene": "light near-uniform surface",
+        "status": "객체 0개 사용자 확인",
+        "group": "tentative_uniform_surface_14_15"
+      },
+      "sha256": "3aa90e12f71f8ddf0bd2c95022babd37915767ef5817cdb82f75510b70a8a5f9",
+      "pixel_sha256": "f0924e69bbc9fa9985d7c7a1b45a6ed5e646f2d96affb1b2645202234e5b0e86",
+      "proposed_role": "train_proposal",
+      "proposed_group": "G09",
+      "previous_review": {
+        "photo": 15,
+        "scene": "light near-uniform surface",
+        "status": "candidate; uniform texture prevents reliable focus assessment from appearance alone",
+        "group": "tentative_uniform_surface_14_15"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 16,
+      "original_name": "KakaoTalk_20261023_182728310_15.jpg",
+      "local_path": "/workspace/background_review/batch_16_20/16.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:14:23",
+      "review": {
+        "photo": 16,
+        "scene": "light uniform surface with scuffs",
+        "status": "객체 0개 사용자 확인",
+        "group": "possibly_same_location_as_14_15; unconfirmed"
+      },
+      "sha256": "c91423d9681344c67e92777091cdebf143705490691c68b342f2d3e7e7c36c1b",
+      "pixel_sha256": "4e69341fc657f252aa7bcafa7c75c62e77c10d0e53dd1a475a42833578ef1c6a",
+      "proposed_role": "train_proposal",
+      "proposed_group": "G09",
+      "previous_review": {
+        "photo": 16,
+        "scene": "light uniform surface with scuffs",
+        "status": "candidate_empty_background; no discernible target object",
+        "group": "possibly_same_location_as_14_15; unconfirmed"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 17,
+      "original_name": "KakaoTalk_20261023_182728310_16.jpg",
+      "local_path": "/workspace/background_review/batch_16_20/17.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:15:26",
+      "review": {
+        "photo": 17,
+        "scene": "brown wood-grain surface with reflections and small marks",
+        "status": "객체 0개 사용자 확인",
+        "group": "tentative_wood_17_18_20; unconfirmed"
+      },
+      "sha256": "cb86935b15e4a678a1cc1c04913e32ab1a9c9a5f82fe2bce08c0d0a881fb20ff",
+      "pixel_sha256": "134287d3e872c1fe2e1dfc9e946b8a915259c77dd8c647809743b557b80fa2b6",
+      "proposed_role": "development_evaluation_proposal",
+      "proposed_group": "G10",
+      "previous_review": {
+        "photo": 17,
+        "scene": "brown wood-grain surface with reflections and small marks",
+        "status": "candidate_pending_final_review; small marks not confidently identified",
+        "group": "tentative_wood_17_18_20; unconfirmed"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 18,
+      "original_name": "KakaoTalk_20261023_182728310_17.jpg",
+      "local_path": "/workspace/background_review/batch_16_20/18.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:15:36",
+      "review": {
+        "photo": 18,
+        "scene": "polished brown wood-grain surface with reflections",
+        "status": "객체 0개 사용자 확인",
+        "group": "tentative_wood_17_18_20; unconfirmed"
+      },
+      "sha256": "13d89e44c486ce774470bb7a6afd555919605de7d89aea65077e19bb920684c8",
+      "pixel_sha256": "d35298db01faf39f30462cfcf1cb7c9ee7d6a3bf17b882912bc1379146e0110b",
+      "proposed_role": "development_evaluation_proposal",
+      "proposed_group": "G10",
+      "previous_review": {
+        "photo": 18,
+        "scene": "polished brown wood-grain surface with reflections",
+        "status": "candidate_pending_final_review; small marks not confidently identified",
+        "group": "tentative_wood_17_18_20; unconfirmed"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 19,
+      "original_name": "KakaoTalk_20261023_182728310_18.jpg",
+      "local_path": "/workspace/background_review/batch_16_20/19.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:15:39",
+      "review": {
+        "photo": 19,
+        "scene": "white rectangular tiles and grout",
+        "status": "객체 0개 사용자 확인",
+        "group": "tentative_white_rectangular_tile"
+      },
+      "sha256": "c6cd1ce8ab6c5a7972ea264045f846e35cf18ed273526fccb5efa50a2b0bd450",
+      "pixel_sha256": "39a189bbbacfb48c1ef6a0a40fde29f7d14ee8a22a30bc9fee8c0377f67cf324",
+      "proposed_role": "train_proposal",
+      "proposed_group": "G11",
+      "previous_review": {
+        "photo": 19,
+        "scene": "white rectangular tiles and grout",
+        "status": "candidate_empty_background; no discernible target object",
+        "group": "tentative_white_rectangular_tile"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 20,
+      "original_name": "KakaoTalk_20261023_182728310_19.jpg",
+      "local_path": "/workspace/background_review/batch_16_20/20.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:15:48",
+      "review": {
+        "photo": 20,
+        "scene": "brown wood-grain surface with scratches",
+        "status": "객체 0개 사용자 확인",
+        "group": "tentative_wood_17_18_20; unconfirmed"
+      },
+      "sha256": "da080ec67068cf48789c8a78fb7d5c4b5a58ec018643fd09b8d0cc0efef353c1",
+      "pixel_sha256": "334f55ad94121a0588438a19558e5dc6991b7218f0839a618cb74054b72d3ca9",
+      "proposed_role": "development_evaluation_proposal",
+      "proposed_group": "G10",
+      "previous_review": {
+        "photo": 20,
+        "scene": "brown wood-grain surface with scratches",
+        "status": "candidate_empty_background; no discernible target object",
+        "group": "tentative_wood_17_18_20; unconfirmed"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 21,
+      "original_name": "KakaoTalk_20261023_182728310_20.jpg",
+      "local_path": "/workspace/background_review/batch_21_25/21.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:15:55",
+      "review": {
+        "photo": 21,
+        "scene": "gray textured surface with marks and shadow",
+        "status": "객체 0개 사용자 확인",
+        "group": "unconfirmed_gray_surface"
+      },
+      "sha256": "35cae3b74b534291a8a2b207441a4e73e7ebd39e980bb7840d58a01d3004a21e",
+      "pixel_sha256": "a0cc6811c0a89d4ea0ac14c07ada53ce85f40ad5f65c9aad4b5e2de6c23c7b2e",
+      "proposed_role": "train_proposal",
+      "proposed_group": "G12",
+      "previous_review": {
+        "photo": 21,
+        "scene": "gray textured surface with marks and shadow",
+        "status": "candidate_empty_background; no discernible target object",
+        "group": "unconfirmed_gray_surface"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 22,
+      "original_name": "KakaoTalk_20261023_182728310_21.jpg",
+      "local_path": "/workspace/background_review/batch_21_25/22.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:16:13",
+      "review": {
+        "photo": 22,
+        "scene": "brown wood-grain surface with reflections",
+        "status": "객체 0개 사용자 확인",
+        "group": "possibly_related_to_17_18_20; unconfirmed"
+      },
+      "sha256": "12c53417f72f9d4b44da17c2c8517bb5dabd5a29dd9046ed6f4598dbe5a76f10",
+      "pixel_sha256": "6d9567b47e126372dab781847d491cdd80dbe7156546cb5fea0246b0d53cffe6",
+      "proposed_role": "development_evaluation_proposal",
+      "proposed_group": "G10",
+      "previous_review": {
+        "photo": 22,
+        "scene": "brown wood-grain surface with reflections",
+        "status": "candidate_empty_background; tiny marks unresolved",
+        "group": "possibly_related_to_17_18_20; unconfirmed"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 23,
+      "original_name": "KakaoTalk_20261023_182728310_22.jpg",
+      "local_path": "/workspace/background_review/batch_21_25/23.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:17:55",
+      "review": {
+        "photo": 23,
+        "scene": "엘리베이터 문 쪽 고정 금속 표면",
+        "status": "객체 0개 사용자 확인",
+        "group": "unconfirmed_reflective_fixture"
+      },
+      "sha256": "4980761568384bd75f923b7ddb75f642e3c1de8ef6653a5304fffb97a9c34f92",
+      "pixel_sha256": "fe79017ab3546baeda34a3d9626cb380d1f54ad2da794d221e3037c560b1b905",
+      "proposed_role": "train_proposal",
+      "proposed_group": "G13",
+      "previous_review": {
+        "photo": 23,
+        "scene": "reflective metallic-looking surface with repeated square pattern",
+        "status": "hold_scope_confirmation; verify fixed wall/fixture rather than target recyclable object",
+        "group": "unconfirmed_reflective_fixture"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 24,
+      "original_name": "KakaoTalk_20261023_182728310_23.jpg",
+      "local_path": "/workspace/background_review/batch_21_25/24.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:18:19",
+      "review": {
+        "photo": 24,
+        "scene": "light densely speckled surface with shadow",
+        "status": "객체 0개 사용자 확인",
+        "group": "tentative_speckled_24_25"
+      },
+      "sha256": "e4c20a8eeda8854751b94d644795ddeecdbacdb700f153a44323c78edaf9a6cd",
+      "pixel_sha256": "756dc79a23306fdd471a1f2d38ac22539237bad79ec2fc89d76827e2ad410466",
+      "proposed_role": "train_proposal",
+      "proposed_group": "G14",
+      "previous_review": {
+        "photo": 24,
+        "scene": "light densely speckled surface with shadow",
+        "status": "candidate_empty_background",
+        "group": "tentative_speckled_24_25"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 25,
+      "original_name": "KakaoTalk_20261023_182728310_24.jpg",
+      "local_path": "/workspace/background_review/batch_21_25/25.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:18:29",
+      "review": {
+        "photo": 25,
+        "scene": "light densely speckled surface",
+        "status": "객체 0개 사용자 확인",
+        "group": "tentative_speckled_24_25"
+      },
+      "sha256": "633469b82036423fda0cc6c578384d8253629977f99155801eb3388385e7657a",
+      "pixel_sha256": "50d99da00c3a5b505a4a296856c17dfdd3f619faa9b6f94e295b1314d940d45a",
+      "proposed_role": "train_proposal",
+      "proposed_group": "G14",
+      "previous_review": {
+        "photo": 25,
+        "scene": "light densely speckled surface",
+        "status": "candidate_empty_background",
+        "group": "tentative_speckled_24_25"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 26,
+      "original_name": "KakaoTalk_20261023_182728310_25.jpg",
+      "local_path": "/workspace/background_review/batch_26_30/26.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:18:36",
+      "review": {
+        "photo": 26,
+        "scene": "light densely speckled surface",
+        "status": "객체 0개 사용자 확인",
+        "group": "possibly_same_location_as_24_25_28; unconfirmed"
+      },
+      "sha256": "e68f13a56b8afe8f2ea6f04c09f67172ebbcebce9761554fbda6e9b50e90cea8",
+      "pixel_sha256": "5631feedaee148638b4f54bece3e4d01711a3c052243ca5e622c9decac416701",
+      "proposed_role": "train_proposal",
+      "proposed_group": "G14",
+      "previous_review": {
+        "photo": 26,
+        "scene": "light densely speckled surface",
+        "status": "candidate_empty_background",
+        "group": "possibly_same_location_as_24_25_28; unconfirmed"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 27,
+      "original_name": "KakaoTalk_20261023_182728310_26.jpg",
+      "local_path": "/workspace/background_review/batch_26_30/27.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:16:01",
+      "review": {
+        "photo": 27,
+        "scene": "dark tile floor with shadows; small shoe-like edge at lower right",
+        "status": "객체 0개 사용자 확인",
+        "group": "unconfirmed_dark_tiles"
+      },
+      "sha256": "fab70fe3429868f062c7b0be9b37a9c5c4e4ac5a919aee805542d98d9a987b62",
+      "pixel_sha256": "3a31fab38a2950f8a6f6d283ad999fcd67501c8508cd65d14e58020fbdf6a9a5",
+      "proposed_role": "train_proposal",
+      "proposed_group": "G12",
+      "previous_review": {
+        "photo": 27,
+        "scene": "dark tile floor with shadows; small shoe-like edge at lower right",
+        "status": "candidate_no_discernible_target_class; non-target edge object present",
+        "group": "unconfirmed_dark_tiles"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 28,
+      "original_name": "KakaoTalk_20261023_182728310_27.jpg",
+      "local_path": "/workspace/background_review/batch_26_30/28.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:18:45",
+      "review": {
+        "photo": 28,
+        "scene": "light densely speckled surface with shadow",
+        "status": "객체 0개 사용자 확인",
+        "group": "possibly_same_location_as_24_25_26; unconfirmed"
+      },
+      "sha256": "b8d9f8ff592dcc04f54eabcd21c60cb2738272fe3436b70d6a30004e21b10b3e",
+      "pixel_sha256": "aac9af830d2bc7b6758995d6ef0b401efb4b0d651303f78d5b7478e1b18104e0",
+      "proposed_role": "train_proposal",
+      "proposed_group": "G14",
+      "previous_review": {
+        "photo": 28,
+        "scene": "light densely speckled surface with shadow",
+        "status": "candidate_empty_background",
+        "group": "possibly_same_location_as_24_25_26; unconfirmed"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 29,
+      "original_name": "KakaoTalk_20261023_182728310_28.jpg",
+      "local_path": "/workspace/background_review/batch_26_30/29.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:19:21",
+      "review": {
+        "photo": 29,
+        "scene": "light polished marble-like surface with veins and light reflections",
+        "status": "객체 0개 사용자 확인",
+        "group": "unconfirmed_light_veined_surface"
+      },
+      "sha256": "5aa1a3690bb858c49e88ef0fc6bd88e4c33a9f90711d7d264f53a08360507cb5",
+      "pixel_sha256": "07bb457d08f9f5acda6df44d020b19e900fb8b56181ff7c760177e3d311ea2da",
+      "proposed_role": "development_evaluation_proposal",
+      "proposed_group": "G15",
+      "previous_review": {
+        "photo": 29,
+        "scene": "light polished marble-like surface with veins and light reflections",
+        "status": "candidate_empty_background; no discernible target object",
+        "group": "unconfirmed_light_veined_surface"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 30,
+      "original_name": "KakaoTalk_20261023_182728310_29.jpg",
+      "local_path": "/workspace/background_review/batch_26_30/30.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:18:53",
+      "review": {
+        "photo": 30,
+        "scene": "gray near-uniform surface",
+        "status": "객체 0개 사용자 확인",
+        "group": "unconfirmed_uniform_gray"
+      },
+      "sha256": "0d6672f696ac488e83af72e606b7137d034490b0081705a1f1e36688c907d0c6",
+      "pixel_sha256": "169635edaa0b2760f082de0d96a59e98fa8f09dde89c0715e1e5599cb04ef53d",
+      "proposed_role": "development_evaluation_proposal",
+      "proposed_group": "G16",
+      "previous_review": {
+        "photo": 30,
+        "scene": "gray near-uniform surface",
+        "status": "candidate; low texture makes focus difficult to assess",
+        "group": "unconfirmed_uniform_gray"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 31,
+      "original_name": "KakaoTalk_20261023_182742650.jpg",
+      "local_path": "/workspace/background_review/batch_31_35/31.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:20:10",
+      "review": {
+        "photo": 31,
+        "scene": "gray square paving stones",
+        "status": "객체 0개 사용자 확인",
+        "group": "possibly_same_location_as_33; unconfirmed"
+      },
+      "sha256": "3886d75af9bf24c1e09f88783b28877f47a60654a4a990bd83974d19a25a1a88",
+      "pixel_sha256": "33f586592245a4cf775770e8686cc12270a214f1aa959ae2c493bc88005b96a3",
+      "proposed_role": "development_evaluation_proposal",
+      "proposed_group": "G17",
+      "previous_review": {
+        "photo": 31,
+        "scene": "gray square paving stones",
+        "status": "candidate_empty_background; no discernible target object",
+        "group": "possibly_same_location_as_33; unconfirmed"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 32,
+      "original_name": "KakaoTalk_20261023_182742650_01.jpg",
+      "local_path": "/workspace/background_review/batch_31_35/32.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:19:56",
+      "review": {
+        "photo": 32,
+        "scene": "fixed grooved deck boards with screws",
+        "status": "객체 0개 사용자 확인",
+        "group": "tentative_grooved_deck"
+      },
+      "sha256": "49f4c8ce4613a540a022abb83d3eae9f42be33e19def36a11327962a5e1a83c1",
+      "pixel_sha256": "ffe97f62b242d2d5ba96936d36b2feab55aab319557c1c4cf164003b815ec7ad",
+      "proposed_role": "train_proposal",
+      "proposed_group": "G18",
+      "previous_review": {
+        "photo": 32,
+        "scene": "fixed grooved deck boards with screws",
+        "status": "candidate_empty_background; fixed structure, no discernible recyclable target",
+        "group": "tentative_grooved_deck"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 33,
+      "original_name": "KakaoTalk_20261023_182742650_02.jpg",
+      "local_path": "/workspace/background_review/batch_31_35/33.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:20:24",
+      "review": {
+        "photo": 33,
+        "scene": "gray paving stones with fallen leaves and small vegetation",
+        "status": "객체 0개 사용자 확인",
+        "group": "possibly_same_location_as_31; unconfirmed"
+      },
+      "sha256": "a562fc52230a867f16836744118fbeac266a8f033d2f732433f5f58ad86c2d47",
+      "pixel_sha256": "4711b9aaed49e03993964baa613f82ff289d61440f2fc20bfcb69e6f7a9e79b3",
+      "proposed_role": "development_evaluation_proposal",
+      "proposed_group": "G17",
+      "previous_review": {
+        "photo": 33,
+        "scene": "gray paving stones with fallen leaves and small vegetation",
+        "status": "candidate_no_discernible_target_class; natural non-target objects present",
+        "group": "possibly_same_location_as_31; unconfirmed"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 34,
+      "original_name": "KakaoTalk_20261023_182742650_03.jpg",
+      "local_path": "/workspace/background_review/batch_31_35/34.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:20:35",
+      "review": {
+        "photo": 34,
+        "scene": "red brick wall",
+        "status": "객체 0개 사용자 확인",
+        "group": "tentative_brick_wall_34_35"
+      },
+      "sha256": "6b23385481820f89d891782c781a86c0b2a734541e3e5722372e9f253ba9058f",
+      "pixel_sha256": "ff2d1cd80b839f8884ba7c79ba57c57096c99e3e27efc7c455bc8ad867524e07",
+      "proposed_role": "development_evaluation_proposal",
+      "proposed_group": "G19",
+      "previous_review": {
+        "photo": 34,
+        "scene": "red brick wall",
+        "status": "candidate_empty_background",
+        "group": "tentative_brick_wall_34_35"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 35,
+      "original_name": "KakaoTalk_20261023_182742650_04.jpg",
+      "local_path": "/workspace/background_review/batch_31_35/35.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:20:32",
+      "review": {
+        "photo": 35,
+        "scene": "red brick wall with matching visible features",
+        "status": "객체 0개 사용자 확인",
+        "group": "tentative_brick_wall_34_35"
+      },
+      "sha256": "c3b4951e571894afe0dd8fb89685b01a6b7b03efbc0c5e5d7d3f561c3ff303f9",
+      "pixel_sha256": "417c2f1fa320474da9bd9e9a27d4d929eb04beb0ea6bb5a993a46614c1fc2c3b",
+      "proposed_role": "development_evaluation_proposal",
+      "proposed_group": "G19",
+      "previous_review": {
+        "photo": 35,
+        "scene": "red brick wall with matching visible features",
+        "status": "candidate_empty_background",
+        "group": "tentative_brick_wall_34_35"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 36,
+      "original_name": "KakaoTalk_20261023_182742650_05.jpg",
+      "local_path": "/workspace/background_review/batch_36_40/36.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:21:08",
+      "review": {
+        "photo": 36,
+        "scene": "patchwork wood-grain surface with reflections",
+        "status": "객체 0개 사용자 확인",
+        "group": "tentative_patchwork_wood_36_37_39"
+      },
+      "sha256": "4f1faffcc863c85e5aa5f956283c0e28cda8216991f61cc9bec8d3fbe6e93d78",
+      "pixel_sha256": "9300d2942a66b49104bf25026212c063535659eb5b6bfc8538d0cf089a456b42",
+      "proposed_role": "train_proposal",
+      "proposed_group": "G20",
+      "previous_review": {
+        "photo": 36,
+        "scene": "patchwork wood-grain surface with reflections",
+        "status": "candidate_pending_final_review; tiny white region unresolved",
+        "group": "tentative_patchwork_wood_36_37_39"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 37,
+      "original_name": "KakaoTalk_20261023_182742650_06.jpg",
+      "local_path": "/workspace/background_review/batch_36_40/37.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:21:09",
+      "review": {
+        "photo": 37,
+        "scene": "matching patchwork wood-grain surface with reflections",
+        "status": "객체 0개 사용자 확인",
+        "group": "tentative_patchwork_wood_36_37_39"
+      },
+      "sha256": "a116e61bcb6aa7761ac83c3f7a26164b8c9f3e95f6883dd25b63455ad00c21fb",
+      "pixel_sha256": "e5c22a11230c6553e653bd2aa60ed93dfa030123d283182ed850daf69f61a68b",
+      "proposed_role": "train_proposal",
+      "proposed_group": "G20",
+      "previous_review": {
+        "photo": 37,
+        "scene": "matching patchwork wood-grain surface with reflections",
+        "status": "candidate_pending_final_review; small white region may be mark or loose fragment",
+        "group": "tentative_patchwork_wood_36_37_39"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 38,
+      "original_name": "KakaoTalk_20261023_182742650_07.jpg",
+      "local_path": "/workspace/background_review/batch_36_40/38.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:20:42",
+      "review": {
+        "photo": 38,
+        "scene": "light scuffed wall-like surface",
+        "status": "객체 0개 사용자 확인",
+        "group": "unconfirmed_light_scuffed_wall"
+      },
+      "sha256": "97b60a746629accf9e19decfc8f5ac1b89bd5afcbf69a0cf7e8166c09450a349",
+      "pixel_sha256": "c6a902b43f0d6b0411c540d274c9fa6541bc77179a159276170b2c49def9b08f",
+      "proposed_role": "train_proposal",
+      "proposed_group": "G09",
+      "previous_review": {
+        "photo": 38,
+        "scene": "light scuffed wall-like surface",
+        "status": "candidate_empty_background; no discernible target object",
+        "group": "unconfirmed_light_scuffed_wall"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 39,
+      "original_name": "KakaoTalk_20261023_182742650_08.jpg",
+      "local_path": "/workspace/background_review/batch_36_40/39.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:21:12",
+      "review": {
+        "photo": 39,
+        "scene": "matching patchwork wood-grain surface with reflections",
+        "status": "객체 0개 사용자 확인",
+        "group": "tentative_patchwork_wood_36_37_39"
+      },
+      "sha256": "25ef3ebc8162d4e654ae73f2515fe349bfbcc71c6bfd859273e15c9da1179675",
+      "pixel_sha256": "4acfaf36f97c844512aeee7091b0496717f2d3aaf76db035a0ad0f0a1c67646d",
+      "proposed_role": "train_proposal",
+      "proposed_group": "G20",
+      "previous_review": {
+        "photo": 39,
+        "scene": "matching patchwork wood-grain surface with reflections",
+        "status": "candidate_pending_final_review; small white region unresolved",
+        "group": "tentative_patchwork_wood_36_37_39"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 40,
+      "original_name": "KakaoTalk_20261023_182742650_09.jpg",
+      "local_path": "/workspace/background_review/batch_36_40/40.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:21:14",
+      "review": {
+        "photo": 40,
+        "scene": "near-uniform beige surface",
+        "status": "객체 0개 사용자 확인",
+        "group": "unconfirmed_beige_uniform_surface"
+      },
+      "sha256": "76393be18e31bcbb0ebd4cdbf104d2f5431e9a8a04575039419e13eef71f9ab1",
+      "pixel_sha256": "0a50ac196620e9c4686760a6713765c053859584f929de867043738365cedcf0",
+      "proposed_role": "development_evaluation_proposal",
+      "proposed_group": "G21",
+      "previous_review": {
+        "photo": 40,
+        "scene": "near-uniform beige surface",
+        "status": "candidate_empty_background; focus difficult to assess from uniform texture",
+        "group": "unconfirmed_beige_uniform_surface"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 41,
+      "original_name": "KakaoTalk_20261023_182742650_10.jpg",
+      "local_path": "/workspace/background_review/batch_41_45/41.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:21:34",
+      "review": {
+        "photo": 41,
+        "scene": "light wood-grain surface",
+        "status": "객체 0개 사용자 확인",
+        "group": "tentative_light_wood_41_42"
+      },
+      "sha256": "65be3e5099549900ab95739d1a0bdd7da728b5f448b13e4b195e556b95995334",
+      "pixel_sha256": "feca6d3985647ab403b807d57d4a8f564a230d818e672933bf8dd8a64f275b5e",
+      "proposed_role": "train_proposal",
+      "proposed_group": "G22",
+      "previous_review": {
+        "photo": 41,
+        "scene": "light wood-grain surface",
+        "status": "candidate_empty_background; no discernible target object",
+        "group": "tentative_light_wood_41_42"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 42,
+      "original_name": "KakaoTalk_20261023_182742650_11.jpg",
+      "local_path": "/workspace/background_review/batch_41_45/42.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:21:35",
+      "review": {
+        "photo": 42,
+        "scene": "light wood-grain surface with close-up perspective",
+        "status": "객체 0개 사용자 확인",
+        "group": "tentative_light_wood_41_42"
+      },
+      "sha256": "c99cba53e53a232add8926866d355bc9c6e9f92a32a8b3f406b1dc77b51e14cd",
+      "pixel_sha256": "2b647407249878ea65917cafe1ea3513cd36088294fc737481aeb51c289737e7",
+      "proposed_role": "train_proposal",
+      "proposed_group": "G22",
+      "previous_review": {
+        "photo": 42,
+        "scene": "light wood-grain surface with close-up perspective",
+        "status": "candidate_empty_background; no discernible target object",
+        "group": "tentative_light_wood_41_42"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 43,
+      "original_name": "KakaoTalk_20261023_182742650_12.jpg",
+      "local_path": "/workspace/background_review/batch_41_45/43.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:22:00",
+      "review": {
+        "photo": 43,
+        "scene": "엘리베이터 바깥쪽 고정 금속 표면",
+        "status": "객체 0개 사용자 확인",
+        "group": "unconfirmed_reflective_gray_surface"
+      },
+      "sha256": "428f6d382e05de7220fc2ea477a0b5772db9b6dcad4266c989dd2f19b0fddeb3",
+      "pixel_sha256": "fc69778f9d24ecde5f5d766c8df952dc90e2efe56ce84c59b3618a2dad749575",
+      "proposed_role": "train_proposal",
+      "proposed_group": "G13",
+      "previous_review": {
+        "photo": 43,
+        "scene": "reflective gray surface with phone/person reflection",
+        "status": "hold_scope_confirmation; fixed surface vs recyclable item not identifiable from close-up alone",
+        "group": "unconfirmed_reflective_gray_surface"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 44,
+      "original_name": "KakaoTalk_20261023_182742650_13.jpg",
+      "local_path": "/workspace/background_review/batch_41_45/44.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:21:53",
+      "review": {
+        "photo": 44,
+        "scene": "warm brown wood-grain surface",
+        "status": "객체 0개 사용자 확인",
+        "group": "possibly_related_to_41_42; unconfirmed"
+      },
+      "sha256": "7459a82cbe96d13cee163b5c866db8ddbb3799ecbd8ee4d6b200469b27fb2aa1",
+      "pixel_sha256": "8356c2208d16aaafaf4de4a324c652767023a795aa6fba9e3ba641b2577dc5f9",
+      "proposed_role": "train_proposal",
+      "proposed_group": "G22",
+      "previous_review": {
+        "photo": 44,
+        "scene": "warm brown wood-grain surface",
+        "status": "candidate_empty_background; no discernible target object",
+        "group": "possibly_related_to_41_42; unconfirmed"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 45,
+      "original_name": "KakaoTalk_20261023_182742650_14.jpg",
+      "local_path": "/workspace/background_review/batch_41_45/45.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:22:07",
+      "review": {
+        "photo": 45,
+        "scene": "reflective tile floor, possibly wet",
+        "status": "객체 0개 사용자 확인",
+        "group": "unconfirmed_reflective_tiles"
+      },
+      "sha256": "b9cfda1d1c14ab08ce1d06db5d8e4258459ff4365d92ba16ca1b3bba0c0a93d4",
+      "pixel_sha256": "c486ff45083cd20801b00d3776395b36cca8e6f0302e8be505f053103cc49938",
+      "proposed_role": "development_evaluation_proposal",
+      "proposed_group": "G23",
+      "previous_review": {
+        "photo": 45,
+        "scene": "reflective tile floor, possibly wet",
+        "status": "hold; small white region near left edge needs confirmation as surface mark vs loose target-class fragment",
+        "group": "unconfirmed_reflective_tiles"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 46,
+      "original_name": "KakaoTalk_20261023_182742650_15.jpg",
+      "local_path": "/workspace/background_review/batch_46_50/46.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:22:24",
+      "review": {
+        "photo": 46,
+        "scene": "light brown polished wood-grain surface with scratches and reflections",
+        "status": "객체 0개 사용자 확인",
+        "group": "tentative_wood_46_47"
+      },
+      "sha256": "ddd4fb151b7ac99b6a4847d40ae188446cec80ec5bc0e769c936cb979afa5f47",
+      "pixel_sha256": "9989f8344cbce740ad9f3bf5ea04f4b1afb2e08f9ced2a8f4cfd7e2438465c31",
+      "proposed_role": "train_proposal",
+      "proposed_group": "G24",
+      "previous_review": {
+        "photo": 46,
+        "scene": "light brown polished wood-grain surface with scratches and reflections",
+        "status": "candidate_empty_background; no discernible target object",
+        "group": "tentative_wood_46_47"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 47,
+      "original_name": "KakaoTalk_20261023_182742650_16.jpg",
+      "local_path": "/workspace/background_review/batch_46_50/47.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:22:21",
+      "review": {
+        "photo": 47,
+        "scene": "matching light brown polished wood-grain surface",
+        "status": "객체 0개 사용자 확인",
+        "group": "tentative_wood_46_47"
+      },
+      "sha256": "0170dd0a69f3c16a73d1289abe4193b7009ced896ed232366f9e079306ce03c0",
+      "pixel_sha256": "32d067ecadfcaf1e68991afcfb8944b081af9c2db1571c2127bec02c45c6e0fa",
+      "proposed_role": "train_proposal",
+      "proposed_group": "G24",
+      "previous_review": {
+        "photo": 47,
+        "scene": "matching light brown polished wood-grain surface",
+        "status": "candidate_empty_background; no discernible target object",
+        "group": "tentative_wood_46_47"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 48,
+      "original_name": "KakaoTalk_20261023_182742650_17.jpg",
+      "local_path": "/workspace/background_review/batch_46_50/48.jpg",
+      "corrected_size": [
+        4000,
+        3000
+      ],
+      "capture_time": "2026:10:23 18:22:44",
+      "review": {
+        "photo": 48,
+        "scene": "gray woven fabric surface with shadow",
+        "status": "객체 0개 사용자 확인",
+        "group": "tentative_gray_woven_fabric"
+      },
+      "sha256": "f403553e23a0abde0b9c48b471d3e1cf113330dd955fcb783947dcb09a1f562d",
+      "pixel_sha256": "c9a4e583bd69e9ac0bab16ea9d10dd7fbdf404a88c490f6f8620466cf32835ac",
+      "proposed_role": "development_evaluation_proposal",
+      "proposed_group": "G25",
+      "previous_review": {
+        "photo": 48,
+        "scene": "gray woven fabric surface with shadow",
+        "status": "candidate_empty_background; no discernible target class",
+        "group": "tentative_gray_woven_fabric"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 49,
+      "original_name": "KakaoTalk_20261023_182742650_18.jpg",
+      "local_path": "/workspace/background_review/batch_46_50/49.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:23:27",
+      "review": {
+        "photo": 49,
+        "scene": "brown wood-grain surface with reflections and small raised transparent-looking mark",
+        "status": "객체 0개 사용자 확인",
+        "group": "unconfirmed_polished_wood_49"
+      },
+      "sha256": "2a9f51ba999e693e4a59af0abd2c9659667b46eac22c2e6d813e8965c67b2864",
+      "pixel_sha256": "4d37029b4203e0cf5e80060397df6e2b6489e6421db49662304ac41aa70a6ba1",
+      "proposed_role": "train_proposal",
+      "proposed_group": "G26",
+      "previous_review": {
+        "photo": 49,
+        "scene": "brown wood-grain surface with reflections and small raised transparent-looking mark",
+        "status": "candidate_pending_final_review; surface scratch/glue vs loose plastic fragment unresolved",
+        "group": "unconfirmed_polished_wood_49"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 50,
+      "original_name": "KakaoTalk_20261023_182742650_19.jpg",
+      "local_path": "/workspace/background_review/batch_46_50/50.jpg",
+      "corrected_size": [
+        4000,
+        3000
+      ],
+      "capture_time": "2026:10:23 18:22:35",
+      "review": {
+        "photo": 50,
+        "scene": "fixed wood-grain board with attached screws",
+        "status": "객체 0개 사용자 확인",
+        "group": "unconfirmed_fixed_wood_board"
+      },
+      "sha256": "d719e908cfdcde7179da2c19a8df1adde28dff86c9f84865648c35140bb66452",
+      "pixel_sha256": "7338d5b3a99cec7c7ca5084e97ab05f08297d9fa125aceaf5c76f73682480c70",
+      "proposed_role": "train_proposal",
+      "proposed_group": "G18",
+      "previous_review": {
+        "photo": 50,
+        "scene": "fixed wood-grain board with attached screws",
+        "status": "candidate_empty_background; attached hardware treated as fixture, not separate recyclable objects",
+        "group": "unconfirmed_fixed_wood_board"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 51,
+      "original_name": "KakaoTalk_20261023_182742650_20.jpg",
+      "local_path": "/workspace/background_review/batch_51_55/51.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:24:04",
+      "review": {
+        "photo": 51,
+        "scene": "light painted wall with small attached translucent rectangular area near lower edge",
+        "status": "객체 0개 사용자 확인",
+        "group": "unconfirmed_light_wall_51"
+      },
+      "sha256": "61abc1ab94f176d0e25d1e5e660221aff8e7c2daba3de1f058fc3e8715d11569",
+      "pixel_sha256": "a2d61439a30426ea3b27f7557697f8d8a01734f2d00a1bc26eb4aa830032432e",
+      "proposed_role": "train_proposal",
+      "proposed_group": "G09",
+      "previous_review": {
+        "photo": 51,
+        "scene": "light painted wall with small attached translucent rectangular area near lower edge",
+        "status": "hold; confirm attached tape/paint mark vs loose target material",
+        "group": "unconfirmed_light_wall_51"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 52,
+      "original_name": "KakaoTalk_20261023_182742650_21.jpg",
+      "local_path": "/workspace/background_review/batch_51_55/52.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:23:53",
+      "review": {
+        "photo": 52,
+        "scene": "fixed grooved wooden steps with anti-slip strips",
+        "status": "객체 0개 사용자 확인",
+        "group": "possibly_related_to_32_deck; unconfirmed"
+      },
+      "sha256": "f8debecd0a734788705d8b7994014ab23b3d9a763b1b8d13eed40c4714a06a12",
+      "pixel_sha256": "cea702bb9d94d3aa295afad55eb625187604687cd9c802f4f5c3fc039f0fa5f4",
+      "proposed_role": "train_proposal",
+      "proposed_group": "G18",
+      "previous_review": {
+        "photo": 52,
+        "scene": "fixed grooved wooden steps with anti-slip strips",
+        "status": "candidate_background_under_fixed_fixture_scope",
+        "group": "possibly_related_to_32_deck; unconfirmed"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 53,
+      "original_name": "KakaoTalk_20261023_182742650_22.jpg",
+      "local_path": "/workspace/background_review/batch_51_55/53.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:23:29",
+      "review": {
+        "photo": 53,
+        "scene": "polished brown wood-grain surface with reflections and raised transparent-looking mark",
+        "status": "객체 0개 사용자 확인",
+        "group": "tentative_same_surface_as_49"
+      },
+      "sha256": "8993e4cbfc84acc7d6e4445394a123e78ee48430c91e45db0b56fbc4a944336d",
+      "pixel_sha256": "a4c056309db6c4de9046969f7e88a2a77f3116bc6b2365f1cd0975cf7cd6543d",
+      "proposed_role": "train_proposal",
+      "proposed_group": "G26",
+      "previous_review": {
+        "photo": 53,
+        "scene": "polished brown wood-grain surface with reflections and raised transparent-looking mark",
+        "status": "hold; confirm surface mark vs loose plastic fragment",
+        "group": "tentative_same_surface_as_49"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 54,
+      "original_name": "KakaoTalk_20261023_182742650_23.jpg",
+      "local_path": "/workspace/background_review/batch_51_55/54.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:24:24",
+      "review": {
+        "photo": 54,
+        "scene": "beige textured wall-like surface",
+        "status": "객체 0개 사용자 확인",
+        "group": "tentative_textured_wall_54_55"
+      },
+      "sha256": "7f40bf689672d3b712bc8e0a7083e5c0e822b16c2acc5c610bf9c24580a3592b",
+      "pixel_sha256": "61f553b7f14b84f9991891bac4c9aeb39cdd5c05a0b4fe0e3a1068fb0e60247b",
+      "proposed_role": "train_proposal",
+      "proposed_group": "G27",
+      "previous_review": {
+        "photo": 54,
+        "scene": "beige textured wall-like surface",
+        "status": "candidate_empty_background; no discernible target object",
+        "group": "tentative_textured_wall_54_55"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    },
+    {
+      "index": 55,
+      "original_name": "KakaoTalk_20261023_182742650_24.jpg",
+      "local_path": "/workspace/background_review/batch_51_55/55.jpg",
+      "corrected_size": [
+        3000,
+        4000
+      ],
+      "capture_time": "2026:10:23 18:24:16",
+      "review": {
+        "photo": 55,
+        "scene": "matching beige textured wall-like surface",
+        "status": "객체 0개 사용자 확인",
+        "group": "tentative_textured_wall_54_55"
+      },
+      "sha256": "9f8eaf350086cad726da648e129e8dc6d81ca70f7f4d739a28c343f4a4afbeae",
+      "pixel_sha256": "d3b518aadc90732f698d102951e788865f612df01e2b724ad634609da50de89b",
+      "proposed_role": "train_proposal",
+      "proposed_group": "G27",
+      "previous_review": {
+        "photo": 55,
+        "scene": "matching beige textured wall-like surface",
+        "status": "candidate_empty_background; no discernible target object",
+        "group": "tentative_textured_wall_54_55"
+      },
+      "zero_target_confirmed": true,
+      "ground_truth_object_count": 0,
+      "confirmation_source": "user",
+      "location_confirmed": false
+    }
+  ]
+}

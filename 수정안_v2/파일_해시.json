@@ -1,0 +1,21 @@
+{
+  "README.md": "fcf94ed11760bb7b56fe72788354b37dba7f4fd9f4b37a7c733eb5daa1563ab4",
+  "requirements.txt": "b6223ba62c79688480be8d48f0ee574c7fedac7f863ddb0868380e29bb95d0d0",
+  "test_recycling_fix.py": "59d7ce37374e994a2bb54a573882ac2a1495d32777b0515423fdbfc37694e606",
+  "reviewed_label_fix_v2.json": "0eabe115069cc98af6d644523adb9c0c977f9fc1c4e7314fbe38822496e9cfbf",
+  "오류수정_v2_실행.ipynb": "5a482f592f47c737ea6f085d90246816c3bbf22ce971817803033ad8160c7c97",
+  ".gitignore": "862263fa1f46c20f0d1e4dac5ffcc75abd55c08211b2c3864c5f8764b9d87793",
+  "recycling_fix.py": "6722a9d19936e80c39abb1e21c47f17ee50e8dde497373463075ca71f937d798",
+  "검증기록/existing_model_val_evaluation.json": "8656b60ca0f371d8afbe5d6353cc9a6d2711bb723f07da1c6997c5378bb0507e",
+  "검증기록/predict_smoke_train_seen.json": "90595318f8cf82a765104d69c5439bb1c66f1e9fe3a829bb527ae6c269ffca04",
+  "검증기록/label_review.csv": "ffdfba31bdca2960d721d285f6f1385760c4e8d0745b9e80994a14d7d7add7b5",
+  "검증기록/verification.json": "5fe7ac1b23d9b00d497d964723bfc765d5406617c7e219701fbc1524dd67324f",
+  "검증기록/reviewed_audit.json": "bd194b970f5574fa44d16d66e50838d2f68138ae2894e2a1dc3bbe68d81a72fb",
+  "검증기록/baseline_audit.json": "12dec74663a73dbcf9b1d07841d2061967429d3d2196136c6d2f1b212978d5b5",
+  "검토_근거/0_0000.jpg": "8205ad583d51c69ff65b7666e62f6d0837a40e8203e392a5cb2146e21a679f37",
+  "검토_근거/0_0005.jpg": "94d1e4b57d719fd6840391721145d1c7fd4a454e434765dd6e4e30a71fb5b551",
+  "검토_근거/0_0000_after.txt": "376e8e45b18811a4229acf5b3c1caf01d6a36c2f06e7a7ea43d2244df153bf30",
+  "검토_근거/0_0005_after.txt": "e17809159bf12b13aa8599b5f27aa2e764e3b0f3a8c0558578adeef3d1f560f2",
+  "검토_근거/0_0000_before.txt": "89e952abfb0a70343725e7c159f87b195f7100ad9ae13232933bc0834005b996",
+  "검토_근거/0_0005_before.txt": "82b0146c1e58be0d6deaf90b200b272c5f513d92615d250bce5848fb9c13547f"
+}
