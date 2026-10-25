@@ -35,7 +35,8 @@ void main() {
     expect(disposalItems.length, 16);
     expect(disposalItems.map((i) => i.id).toSet().length, 16);
     const mapped = {'paper_general', 'paper_cardboard', 'paper_carton',
-      'plastic_clear_pet', 'plastic_container', 'plastic_other', 'metal_can'};
+      'plastic_clear_pet', 'plastic_container', 'plastic_other', 'metal_can',
+      'other_film', 'other_mixed'};
     for (final item in disposalItems) {
       final guide = guideFor(item.id);
       if (mapped.contains(item.id)) {

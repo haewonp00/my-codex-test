@@ -1,0 +1,25 @@
+{
+  "new_images": 2,
+  "total_images": 6,
+  "registered_guide_items": 9,
+  "new_item_ids": [
+    "other_film",
+    "other_mixed"
+  ],
+  "new_route": "직접 배출 방법 찾기 → 기타",
+  "AI_classes": [
+    "plastic",
+    "paper",
+    "metal"
+  ],
+  "extra_YOLO_classes": false,
+  "image_decode_and_all_6_SHA256": "passed",
+  "Dart_syntax_files": 14,
+  "Dart_syntax": "passed (tree-sitter, not analyzer)",
+  "PowerShell_syntax": "passed (tree-sitter, not Windows runtime)",
+  "Flutter_analyze_and_tests": "not run: Flutter SDK unavailable",
+  "phone_run": "not run: S25 unavailable",
+  "new_tests": "direct lookup of each added item verifies zero analysis API calls",
+  "image_editing": false,
+  "model_training": false
+}

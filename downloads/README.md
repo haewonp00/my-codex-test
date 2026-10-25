@@ -1,5 +1,9 @@
 # 받을 파일과 정확한 위치
 
+## 최신: 비닐·복합재질 직접 안내 추가
+
+[recycling_manual_guides_v5.zip](recycling_manual_guides_v5.zip)을 받아 적용합니다. [Windows 적용 설명](비닐_복합재질_직접안내_v5.md)에 따라 진행하세요. 기존 안내 이미지가 설치된 앱에 새 이미지 2장과 직접 선택 안내를 추가합니다. YOLO 클래스와 서버·모델은 변경하지 않습니다.
+
 ## 안내 이미지 v3 설치 후 확대 테스트 1개만 실패한 경우
 
 [recycling_guide_zoom_fix_v4.zip](recycling_guide_zoom_fix_v4.zip)만 받아 두 Dart 파일을 교체합니다. [적용 순서](이미지확대_수정_v4.md)를 참고하세요. 이미지/서버/모델은 다시 설치하지 않습니다. 이 패치는 이미지 v3 설치 후 사용하는 것입니다.

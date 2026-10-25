@@ -90,6 +90,12 @@ class _GuidePageState extends State<GuidePage> {
           style: Theme.of(context).textTheme.headlineSmall),
         const SizedBox(height: 8),
         Text('확인한 종류: ${_selection.category.label}'),
+        if (guide?.manualSelectionOnly ?? false) ...[
+          const SizedBox(height: 8),
+          const Text('이 품목은 사진 분석으로 구분하지 않아요. 직접 선택한 품목의 안내입니다.',
+            key: ValueKey('guide-manual-note'),
+            style: TextStyle(fontSize: 13, color: Colors.black54)),
+        ],
         const SizedBox(height: 16),
         OutlinedButton.icon(key: const ValueKey('guide-change-item'),
           onPressed: _change, icon: const Icon(Icons.edit_outlined), label: const Text('품목 변경')),
@@ -103,7 +109,7 @@ class _GuidePageState extends State<GuidePage> {
               child: GestureDetector(key: const ValueKey('guide-open-image'),
                 behavior: HitTestBehavior.opaque,
                 onTap: () => _expandImage(guide),
-                // All four bundled images are square. Reserve their full area
+                // All bundled images are square. Reserve their full area
                 // before decoding, so the tap surface cannot collapse to zero.
                 child: AspectRatio(aspectRatio: 1,
                   child: _guideImage(guide, key: const ValueKey('guide-inline-image'))))),

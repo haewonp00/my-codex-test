@@ -33,6 +33,11 @@ Future<ItemSelection?> showItemPicker(BuildContext context, {
               const SizedBox(height: 16),
               if (category != null) ...[
                 const Text('세부 품목을 선택해 주세요.'),
+                if (category == ItemCategory.other)
+                  const Padding(padding: EdgeInsets.symmetric(vertical: 8),
+                    child: Text('기타 품목은 사진 분석으로 구분하지 않아요. 직접 선택해 주세요.',
+                      key: ValueKey('manual-only-items-note'),
+                      style: TextStyle(fontSize: 12, color: Colors.black54))),
                 for (final item in disposalItems.where((i) => i.category == category))
                   ListTile(key: ValueKey('item-${item.id}'),
                     title: Text(item.name),

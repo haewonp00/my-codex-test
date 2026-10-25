@@ -1,0 +1,33 @@
+{
+  "uploaded_archive": "분리배출 방법 사진 2.zip",
+  "assets": [
+    {
+      "original_filename": "비닐류.png",
+      "asset": "assets/guides/film.png",
+      "sha256": "7469af282c99b9a45c19e23f7766dfc4c3c871088665fc73d4d6cbbca06e1f6c",
+      "size": [
+        1080,
+        1080
+      ],
+      "bytes_unchanged": true
+    },
+    {
+      "original_filename": "복합 쓰레기.png",
+      "asset": "assets/guides/mixed_packaging.png",
+      "sha256": "8c55d63bcc04b1728ddaacd7b3be2681b4f772664ea87c60b63998648f08bf2b",
+      "size": [
+        1080,
+        1080
+      ],
+      "bytes_unchanged": true
+    }
+  ],
+  "manual_items": [
+    "other_film",
+    "other_mixed"
+  ],
+  "license_independently_verified": false,
+  "original_source_urls": null,
+  "mixed_image_observation": "제공 원본 오른쪽 문장 일부가 잘려 보임. 원본을 임의 편집/복원하지 않고 그대로 사용.",
+  "training_executed": false
+}

@@ -174,4 +174,31 @@ void main() {
     expect(find.byKey(const ValueKey('guide-inline-image')), findsNothing);
     expect(tester.takeException(), isNull);
   });
+
+  for (final item in ['other_film', 'other_mixed']) {
+    testWidgets('manual guide $item opens the provided image without analysis', (tester) async {
+      tester.view.physicalSize = const Size(360, 640);
+      tester.view.devicePixelRatio = 1;
+      addTearDown(tester.view.resetPhysicalSize);
+      addTearDown(tester.view.resetDevicePixelRatio);
+      await tester.pumpWidget(MyApp(photos: photos, api: api));
+      await tester.pumpAndSettle();
+      await tapInList(tester, 'photo-scroll', find.byKey(const ValueKey('manual-guide')));
+      await tester.tap(find.byKey(const ValueKey('category-other')));
+      await tester.pumpAndSettle();
+      await reveal(tester, 'item-picker-scroll', find.byKey(const ValueKey('manual-only-items-note')));
+      await confirmPicker(tester, item);
+      final name = find.byKey(const ValueKey('guide-item-name'));
+      await reveal(tester, 'guide-scroll', name);
+      expect(tester.widget<Text>(name).data, item == 'other_film' ? '비닐' : '여러 재질이 섞인 포장');
+      await reveal(tester, 'guide-scroll', find.byKey(const ValueKey('guide-manual-note')));
+      await reveal(tester, 'guide-scroll', find.byKey(const ValueKey('guide-inline-image')));
+      final expected = item == 'other_film' ? 'assets/guides/film.png' : 'assets/guides/mixed_packaging.png';
+      expect(tester.widget<Image>(find.byKey(const ValueKey('guide-inline-image'))).image,
+        isA<AssetImage>().having((image) => image.assetName, 'assetName', expected));
+      expect(find.byKey(const ValueKey('guide-pending')), findsNothing);
+      expect(api.calls, 0);
+      expect(tester.takeException(), isNull);
+    });
+  }
 }

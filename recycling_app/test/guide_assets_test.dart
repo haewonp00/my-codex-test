@@ -1,6 +1,7 @@
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:recycling_app/data/guides.dart';
+import 'package:recycling_app/models/detection.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
@@ -9,6 +10,8 @@ void main() {
     'assets/guides/metal_can.png',
     'assets/guides/clear_pet.png',
     'assets/guides/plastic.png',
+    'assets/guides/film.png',
+    'assets/guides/mixed_packaging.png',
   };
   for (final asset in assets) {
     test('real image is bundled: $asset', () async {
@@ -18,15 +21,21 @@ void main() {
       expect(bytes.take(8), [137, 80, 78, 71, 13, 10, 26, 10]);
     });
   }
-  test('seven supported items use four images; unsupported items stay pending', () {
-    expect(disposalGuides.length, 7);
+  test('YOLO classes remain plastic, paper and metal only', () {
+    expect(classNames, {0: 'plastic', 1: 'paper', 2: 'metal'});
+  });
+  test('nine guide items use six images; unsupported items stay pending', () {
+    expect(disposalGuides.length, 9);
     expect(disposalGuides.values.map((g) => g.assetImagePath).toSet(), assets);
     expect(guideFor('paper_general'), same(guideFor('paper_cardboard')));
     expect(guideFor('paper_carton'), same(guideFor('paper_general')));
     expect(guideFor('metal_pressurized'), isNull);
     expect(guideFor('metal_other'), isNull);
     expect(guideFor('other_glass'), isNull);
-    expect(guideFor('other_film'), isNull);
+    expect(guideFor('other_film')!.assetImagePath, 'assets/guides/film.png');
+    expect(guideFor('other_mixed')!.assetImagePath, 'assets/guides/mixed_packaging.png');
+    expect(guideFor('other_film')!.manualSelectionOnly, true);
+    expect(guideFor('other_mixed')!.manualSelectionOnly, true);
     expect(guideFor('plastic_unknown'), isNull);
     for (final guide in disposalGuides.values) {
       expect(guide.isRegistered, true);

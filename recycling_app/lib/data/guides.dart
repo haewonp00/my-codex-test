@@ -12,6 +12,7 @@ class DisposalGuide {
     this.assetImagePath,
     this.sourceNote,
     this.sourceVerified = false,
+    this.manualSelectionOnly = false,
   });
   final List<String> actions;
   final List<String> cautions;
@@ -25,6 +26,7 @@ class DisposalGuide {
   final String? assetImagePath;
   final String? sourceNote;
   final bool sourceVerified;
+  final bool manualSelectionOnly;
 
   bool get hasImage =>
       (assetImagePath?.isNotEmpty ?? false) ||
@@ -66,7 +68,24 @@ const _plastic = DisposalGuide(
   assetImagePath: 'assets/guides/plastic.png', sourceNote: _sourceNote,
 );
 
-// 사용자 확인 품목에만 연결. 모르겠어요/비닐/유리/혼합재질/가스용기 등은 미등록.
+const _film = DisposalGuide(
+  actions: [], cautions: [], institution: _institution,
+  documentTitle: '비닐류 — 사용자 제공 편집본', usageTerms: _terms,
+  assetImagePath: 'assets/guides/film.png', manualSelectionOnly: true,
+  sourceNote: '$_sourceNote 추가 문구 참고 표기: 수정구청·강동구청 분리배출 안내.',
+);
+const _mixedPackaging = DisposalGuide(
+  actions: [], cautions: [],
+  institution: '한국소비자원 (제공 이미지 내 내용 참고 표기)',
+  documentTitle: '여러 재질이 섞인 포장 — 사용자 제공 안내',
+  usageTerms: '제공 이미지에 원문 이용 조건 표기 없음 (원문 미확인)',
+  assetImagePath: 'assets/guides/mixed_packaging.png', manualSelectionOnly: true,
+  sourceNote: '사용자 제공 이미지입니다. 내용 참고 표기: 한국소비자원 「재질별 분리배출」. '
+      '원문 URL·작성일·이용 조건은 확인되지 않았습니다.',
+);
+
+// 사용자 확인 품목에만 연결. 비닐/복합재질은 AI 클래스가 아닌 직접 선택 안내.
+// 모르겠어요/유리/가스용기/기타 금속의 자료는 아직 미등록.
 const disposalGuides = <String, DisposalGuide>{
   'paper_general': _paper,
   'paper_cardboard': _paper,
@@ -75,6 +94,8 @@ const disposalGuides = <String, DisposalGuide>{
   'plastic_container': _plastic,
   'plastic_other': _plastic,
   'metal_can': _metalCan,
+  'other_film': _film,
+  'other_mixed': _mixedPackaging,
 };
 
 DisposalGuide? guideFor(String itemId) {
