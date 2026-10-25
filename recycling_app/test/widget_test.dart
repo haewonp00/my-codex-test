@@ -152,7 +152,12 @@ void main() {
     await reveal(tester, 'guide-scroll', find.byKey(const ValueKey('guide-open-image')));
     final inline = tester.widget<Image>(find.byKey(const ValueKey('guide-inline-image')));
     expect(inline.image, isA<AssetImage>());
-    await tester.tap(find.byKey(const ValueKey('guide-open-image')));
+    final tapTarget = find.byKey(const ValueKey('guide-open-image'));
+    final tapSize = tester.getSize(tapTarget);
+    expect(tapSize.width, greaterThan(0));
+    expect(tapSize.height, closeTo(tapSize.width, 0.5));
+    expect(tapTarget.hitTestable(), findsOneWidget);
+    await tester.tap(tapTarget);
     await tester.pumpAndSettle();
     expect(find.byKey(const ValueKey('guide-image-dialog')), findsOneWidget);
     expect(find.byType(InteractiveViewer), findsOneWidget);

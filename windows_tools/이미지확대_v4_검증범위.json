@@ -1,0 +1,18 @@
+{
+  "user_log_before_fix": {
+    "analyzer": "No issues found",
+    "tests_passed": 22,
+    "tests_failed": 1,
+    "failure": "tap did not hit guide-open-image; zoom dialog absent"
+  },
+  "fix": "reserve square image tap area before decoding; opaque hit behavior; verify hitTestable then tap",
+  "dart_parser": "passed",
+  "powershell_parser": "passed",
+  "flutter_runtime_after_fix": "not run: SDK unavailable",
+  "Windows_and_S25": "not run",
+  "changed_files": [
+    "lib/ui/guide_page.dart",
+    "test/widget_test.dart"
+  ],
+  "server_or_model_changed": false
+}

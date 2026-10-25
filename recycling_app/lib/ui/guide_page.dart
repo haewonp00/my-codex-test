@@ -70,8 +70,9 @@ class _GuidePageState extends State<GuidePage> {
       child: SizedBox(height: MediaQuery.sizeOf(context).height * 0.8,
         width: double.maxFinite,
         child: Column(children: [
-          Expanded(child: InteractiveViewer(minScale: 0.5, maxScale: 6,
-            child: _guideImage(guide, key: const ValueKey('guide-expanded-image')))),
+          Expanded(child: SizedBox.expand(
+            child: InteractiveViewer(minScale: 0.5, maxScale: 6,
+              child: _guideImage(guide, key: const ValueKey('guide-expanded-image'))))),
           TextButton(key: const ValueKey('guide-close-image'),
             onPressed: () => Navigator.pop(context), child: const Text('닫기')),
         ])),
@@ -99,9 +100,13 @@ class _GuidePageState extends State<GuidePage> {
         else ...[
           if (guide.hasImage) ...[
             Semantics(button: true, label: '분리배출 안내 이미지 확대',
-              child: InkWell(key: const ValueKey('guide-open-image'),
+              child: GestureDetector(key: const ValueKey('guide-open-image'),
+                behavior: HitTestBehavior.opaque,
                 onTap: () => _expandImage(guide),
-                child: _guideImage(guide, key: const ValueKey('guide-inline-image')))),
+                // All four bundled images are square. Reserve their full area
+                // before decoding, so the tap surface cannot collapse to zero.
+                child: AspectRatio(aspectRatio: 1,
+                  child: _guideImage(guide, key: const ValueKey('guide-inline-image'))))),
             const SizedBox(height: 8),
             const Text('이미지를 누르면 확대할 수 있어요.\n배출 방법은 학교 또는 거주 지역의 안내도 확인해 주세요.',
               style: TextStyle(fontSize: 12, color: Colors.black54)),
