@@ -1,0 +1,53 @@
+{
+  "uploaded_archive": "분리배출 방법 사진.zip",
+  "assets": [
+    {
+      "original_filename": "종이류 수정.png",
+      "asset": "assets/guides/paper.png",
+      "sha256": "494e0718fe976b5bea5e0016a9b05db34531dac54a5be9172db89126dc37755c",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "bytes_unchanged": true
+    },
+    {
+      "original_filename": "금속류 수정.png",
+      "asset": "assets/guides/metal_can.png",
+      "sha256": "ee95839d5bdb6cb665fe08e7b412d68ac2c2ba742ed5fc252b15176e8da8328f",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "bytes_unchanged": true
+    },
+    {
+      "original_filename": "투명 플라스틱 수정.png",
+      "asset": "assets/guides/clear_pet.png",
+      "sha256": "745fc7d5e3c50d9609f5d7ae6a538c59cc7851f95fbadb541bb608ce215a9094",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "bytes_unchanged": true
+    },
+    {
+      "original_filename": "플라스틱류 캔바.png",
+      "asset": "assets/guides/plastic.png",
+      "sha256": "07164b32acceed54440d54f3bcb6da5eb2362af2fb839603dea122d08008e199",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "bytes_unchanged": true
+    }
+  ],
+  "original_source_url": null,
+  "license_independently_verified": false,
+  "source_info": "용인시 자원순환과, 2025/07/03, 공공누리 제1유형은 이미지 내부 표기. 실제 원문·권리는 확인되지 않음.",
+  "additional_references_in_images": [
+    "법제처 찾기쉬운 생활법령정보",
+    "용산구청 재활용품 분리배출 가이드라인"
+  ],
+  "training_executed": false
+}

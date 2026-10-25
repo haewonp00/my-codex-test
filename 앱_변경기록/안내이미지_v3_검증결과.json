@@ -1,0 +1,27 @@
+{
+  "received_images": 4,
+  "mapped_items": [
+    "paper_general",
+    "paper_cardboard",
+    "paper_carton",
+    "plastic_clear_pet",
+    "plastic_container",
+    "plastic_other",
+    "metal_can"
+  ],
+  "images_decode_and_sha256_match": "passed",
+  "assets_manifest_and_paths": "passed",
+  "dart_syntax_files": 14,
+  "dart_syntax": "passed (tree-sitter, not Dart analyzer)",
+  "powershell_syntax": "passed (tree-sitter)",
+  "flutter_analyze": "not run: Flutter SDK unavailable",
+  "flutter_test": "not run: Flutter SDK unavailable",
+  "previous_user_Windows_version": "before guide images: No issues found, All 17 tests passed",
+  "S25_after_update": "not run: phone unavailable",
+  "extra_disposal_text_generated": false,
+  "independently_verified_source_urls": 0,
+  "license_independently_verified": false,
+  "server_changed": false,
+  "model_changed": false,
+  "training_executed": false
+}

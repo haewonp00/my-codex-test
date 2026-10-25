@@ -31,10 +31,23 @@ void main() {
     final box = body(); (box['detections'] as List)[0]['bbox'] = [1,2,200,90];
     expect(() => AnalysisResult.fromJson(box), throwsFormatException);
   });
-  test('all 16 items are unique and no official guide is fabricated', () {
+  test('all 16 items are unique; only supplied guides are registered', () {
     expect(disposalItems.length, 16);
     expect(disposalItems.map((i) => i.id).toSet().length, 16);
-    for (final item in disposalItems) { expect(guideFor(item.id), isNull); }
+    const mapped = {'paper_general', 'paper_cardboard', 'paper_carton',
+      'plastic_clear_pet', 'plastic_container', 'plastic_other', 'metal_can'};
+    for (final item in disposalItems) {
+      final guide = guideFor(item.id);
+      if (mapped.contains(item.id)) {
+        expect(guide, isNotNull);
+        expect(guide!.assetImagePath, isNotNull);
+        expect(guide.sourceVerified, false);
+        expect(guide.sourceUrl, isNull);
+        expect(guide.verifiedReferenceDate, isNull);
+      } else {
+        expect(guide, isNull);
+      }
+    }
     expect(officialWebUri(null), isNull);
     expect(officialWebUri('javascript:alert(1)'), isNull);
     expect(() => ItemSelection(category: ItemCategory.paper, itemId: 'metal_can'), throwsArgumentError);
