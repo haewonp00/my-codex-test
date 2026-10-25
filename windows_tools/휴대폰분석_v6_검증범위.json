@@ -1,0 +1,18 @@
+{
+  "script_syntax": "passed (tree-sitter-powershell)",
+  "Windows_execution": "not run: Windows unavailable",
+  "S25_camera_and_USB": "not run: device unavailable",
+  "existing_camera_code": "ImageSource.camera -> image_picker -> photo controller -> multipart file -> /predict",
+  "launch_flow": [
+    "USB debug device check",
+    "reuse or start PC server and wait /health",
+    "validate 3 classes",
+    "adb reverse",
+    "flutter run -d device"
+  ],
+  "server_source_changed": false,
+  "Flutter_source_changed": false,
+  "model_changed": false,
+  "training_executed": false,
+  "on_device_inference": false
+}

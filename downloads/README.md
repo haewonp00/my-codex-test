@@ -1,5 +1,9 @@
 # 받을 파일과 정확한 위치
 
+## S25 카메라 촬영·사진 분석 실행 도구
+
+[recycling_phone_analysis_v6.zip](recycling_phone_analysis_v6.zip)에는 기존 PC 서버 시작·USB 연결·앱 실행을 묶은 PowerShell 도구가 있습니다. [실행 순서](휴대폰_카메라분석_실행_v6.md)를 참고하세요. 기존 소스를 교체하는 패치는 아니며, 플라스틱·종이·금속 분석에 PC 서버가 필요합니다.
+
 ## 최신: 비닐·복합재질 직접 안내 추가
 
 [recycling_manual_guides_v5.zip](recycling_manual_guides_v5.zip)을 받아 적용합니다. [Windows 적용 설명](비닐_복합재질_직접안내_v5.md)에 따라 진행하세요. 기존 안내 이미지가 설치된 앱에 새 이미지 2장과 직접 선택 안내를 추가합니다. YOLO 클래스와 서버·모델은 변경하지 않습니다.
